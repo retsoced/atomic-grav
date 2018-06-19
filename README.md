@@ -1,6 +1,6 @@
 # Atomic Pattern Library - GRAV project
 
-[![pattern library screenshot](atomic-pattern-library.jpg)](http://pattern-library.decoster.design)
+[![pattern library screenshot](atomic-pattern-library.png)](http://pattern-library.decoster.design)
 
 ## Table of contents
 
