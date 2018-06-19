@@ -30,6 +30,17 @@
 		"oAP": "\/assets\/.gitkeep",
 		"oF": 0
 		},
+	"\/atomic-pattern-library.png": {
+		"ft": 32768,
+		"iS": 240150,
+		"oA": 0,
+		"oAP": "\/atomic-pattern-library.png",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 0,
+		"oT": 1,
+		"q": 100
+		},
 	"\/backup\/.gitkeep": {
 		"cB": 0,
 		"ft": 8192,

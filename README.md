@@ -1,8 +1,6 @@
 # Atomic Pattern Library - GRAV project
 
-<a href="http://pattern-library.decostyer.design">
-  <img src="https://screenshots.firefox.com/nbuXBelbu3sHTdUN/pattern-library.decoster.design" alt="Pattern Library" />
-</a>
+[![pattern library screenshot](atomic-pattern-library.jpg)](http://pattern-library.decoster.design)
 
 ## Table of contents
 
