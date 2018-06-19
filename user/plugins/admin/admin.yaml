@@ -1,7 +1,7 @@
 enabled: true
 route: '/admin'
 cache_enabled: false
-theme: custom
+theme: grav
 logo_text: ''
 body_classes: ''
 content_padding: true
@@ -11,7 +11,7 @@ sidebar:
   hover_delay: 100
   size: auto
 dashboard:
-  days_of_stats: 14
+  days_of_stats: 7
 widgets:
   dashboard-maintenance: true
   dashboard-statistics: true
