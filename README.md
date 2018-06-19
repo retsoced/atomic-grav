@@ -28,13 +28,19 @@ So you want to do this? Great, start by either cloning this repo of forking it.
 
 I have installed a base selection of [plugins](https://getgrav.org/downloads/plugins) to try and make the pattern library as useful as possible, and they are the following:
 
-| ------------------------------------------------------- | ------------------------------------------------------ |
-| * [Admin](https://github.com/getgrav/grav-plugin-admin) | * [Form](https://github.com/getgrav/grav-plugin-form) |
-| * [Codepen Embed](https://github.com/andrewscofield/grav-plugin-codepen-embed) | * [Highlight](https://github.com/getgrav/grav-plugin-highlight) |
-| * [Comments](https://github.com/getgrav/grav-plugin-comments) | * [Login](https://github.com/getgrav/grav-plugin-login) |
-| * [Email](https://github.com/getgrav/grav-plugin-email) | * [Problems](https://github.com/getgrav/grav-plugin-problems) |
-| * [Error](https://github.com/getgrav/grav-plugin-error) | * [SEO](https://github.com/paulmassen/grav-plugin-seo) |
-| * [Featherlight](https://github.com/getgrav/grav-plugin-featherlight)  | * [Simplesearch](https://github.com/getgrav/grav-plugin-simplesearch)  |
+* [Admin](https://github.com/getgrav/grav-plugin-admin)
+* [Breadcrumbs](https://github.com/getgrav/grav-plugin-breadcrumbs)
+* [Codepen Embed](https://github.com/andrewscofield/grav-plugin-codepen-embed)
+* [Comments](https://github.com/getgrav/grav-plugin-comments)
+* [Email](https://github.com/getgrav/grav-plugin-email)
+* [Error](https://github.com/getgrav/grav-plugin-error)
+* [Featherlight](https://github.com/getgrav/grav-plugin-featherlight)
+* [Form](https://github.com/getgrav/grav-plugin-form)
+* [Highlight](https://github.com/getgrav/grav-plugin-highlight)
+* [Login](https://github.com/getgrav/grav-plugin-login)
+* [Problems](https://github.com/getgrav/grav-plugin-problems)
+* [SEO](https://github.com/paulmassen/grav-plugin-seo)
+* [Simplesearch](https://github.com/getgrav/grav-plugin-simplesearch)
 
 The theme is a custom theme built using Sass and Simple Grid. Using Simple Grid enables the site to have a modern responsive grid system behind the scenes, but it's also extremely well built, supported and lightweight. The styles are broken up into groups:
 
