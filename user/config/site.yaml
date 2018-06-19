@@ -1,0 +1,16 @@
+title: 'Atomic Pattern Library'
+default_lang: en
+author:
+  name: 'Darryll DeCoster'
+  email: darryll@decoster.design
+taxonomies:
+  - category
+  - tag
+metadata:
+  description: 'Pattern Library template base on the Atomic Pattern concept by Brad Frost'
+  keywords: 'design, interactions, UI, UX, patterns, library, user interface design'
+summary:
+  enabled: true
+  format: short
+  size: 300
+  delimiter: '==='

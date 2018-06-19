@@ -1,0 +1,255 @@
+// ----------
+// globals
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  left: 0;
+  top: 0;
+  font-size: 100%;
+}
+
+body {
+  font-family: $body-font;
+  color: $body-text-color;
+  background: $body-color;
+
+  a {
+    text-decoration: none;
+
+    &:link, &:visited { color: $nav-link; }
+    &:hover, &:active { color: $nav-hover; }
+  }
+
+  pre {
+    display: block;;
+    position: relative;
+    margin: 20px 0;
+    padding: 10px;
+    border: 1px solid $divider-color;
+    background: #f7f7f7;
+  }
+
+  hr {
+    color: $divider-color;
+  }
+}
+
+// --------
+body {
+
+  .topbar {
+    display: block;
+    position: relative;
+    background-color: $topbar-color;
+    border-bottom: 2px solid #000;
+
+    &.sticky {
+      position: fixed;
+      width: 100%;
+      left: 0;
+      top: 0;
+      z-index: 100;
+      border-top: 0;
+    }
+
+    .left-side {
+      margin-left: 0;
+    }
+
+    .right-side {}
+
+    .navbar {
+      margin: 0;
+      padding: 0;
+
+      li {
+        display: inline-block;
+        margin: 5px 3%;
+        list-style: none;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        &:last-child {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
+
+#sidebar {
+  margin-top: 0;
+  margin-left: 0;
+  background: $sidebar-color;
+  // ------
+  background: -moz-linear-gradient(left, rgba(215,206,199,1) 0%, rgba(215,206,199,1) 66%, rgba(201,193,187,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(215,206,199,1) 0%,rgba(215,206,199,1) 66%,rgba(201,193,187,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(215,206,199,1) 0%,rgba(215,206,199,1) 66%,rgba(201,193,187,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+
+  a {
+    display: inline-block;;
+    text-decoration: none;
+
+    &:link, &:visited { color: $sidebar-link; }
+    &:hover, &active { color: $sidebar-hover; }
+  }
+
+  header {
+    padding: 5px 0 0 5px;
+    border-right: 2px solid darken($khaki,20%);
+    #logo {
+      width: 80%;
+    }
+  }
+
+  .scroll-wrapper {
+    border-right: 2px solid $divider-color;
+  }
+
+  ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    &.searched {
+      a {
+        color: #53d4b0;
+      }
+      .search-match {
+        a {
+          color: #53d4b0;
+          &:hover {
+            color: #eee;
+          }
+        }
+      }
+    }
+    &.topics {
+      margin: 0;
+      padding: 0;
+
+      &.searched {
+        ul {
+          display: block;
+        }
+      }
+
+      ul {
+        display: none;
+        margin: 0;
+        padding: 0;
+        padding-bottom: 0.5rem;
+
+        ul {
+          padding-bottom: 0;
+        }
+      }
+
+      li.parent ul,
+      >li.active ul {
+        display: block;
+      }
+
+      >li {
+        >a {
+          line-height: 2rem;
+          font-size: 1.1rem;
+          padding: 0 0.5em;
+
+          b {
+            opacity: 0.5;
+            font-weight: normal;
+          }
+        }
+      }
+    }
+
+    li.active>a {
+      background: $oxblood;
+      color: #fff !important;
+      margin: 0;
+    }
+
+    li {
+      padding: 0;
+      &.visited+span {
+        padding-right: 16px;
+      }
+      a {
+        display: block;
+        padding: 2px 0;
+        span {
+          text-overflow: ellipsis;
+          overflow: hidden;
+          white-space: nowrap;
+          display: block;
+        }
+      }
+      >a {
+        padding: 4px 0;
+      }
+
+      &.visited {
+
+      }
+      li {
+        padding: 0;
+        //text-indent: 0.2rem;
+        a {
+          padding: 5px 1.5em 5px 2em;
+        }
+
+        ul li {
+          a {
+            padding:4px 1.5em 4px 2.5em;
+          }
+        }
+      }
+    }
+  }
+
+  footer {
+    position: relative;
+    margin: 0;
+    padding: 5px;
+    font-size: .7em;
+  }
+}
+
+#body {
+  position: relative;
+  margin: 0;
+  padding: 0;
+
+  .breadcrumbs {
+    display: block;
+    position: relative;
+    margin: 0;
+    padding: 15px 0;
+
+    a {
+      text-decoration: none;
+
+      &:link, &:visited { color: $breadcrumb-link; }
+      &:hover, &:active { color: $breadcrumb-hover; }
+    }
+
+    a span::after {
+      content: '>';
+      display: inline-block;
+      margin: 0 10px;
+      color: #ccc;
+    }
+  }
+
+  .page-title {
+    padding-bottom: 10px;
+    color: $title-color;
+    font-weight: 700;
+    border-bottom: 1px solid $divider-color;
+  }
+}

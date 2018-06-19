@@ -1,0 +1,4 @@
+title: Pattern Name
+'@extends':
+    type: default
+    context: blueprints://pages

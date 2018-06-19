@@ -1,0 +1,37 @@
+// main sass variables, colors and other configurations
+$width: 96%;
+$gutter: 4%;
+$breakpoint-small: 33.75em; // 540px
+$breakpoint-med: 45em; // 720px
+$breakpoint-large: 60em; // 960px
+
+// color palette
+$grain: #d7cec7;
+$blackboard: #565656;
+$oxblood: #6D2A2A;
+$khaki: #c09f80;
+$light: lighten($khaki,20%);
+$tin: #828081;
+$prussian: #0b3c5d;
+
+$sidebar-color: $grain;
+
+// navigation
+$topbar-color: $prussian;
+$nav-link: #ffae1a;
+$nav-hover: darken($nav-link, 30%);
+$sidebar-link: #233237;
+$sidebar-hover: #984b43;
+$breadcrumb-link: #eac67a;
+$breadcrumb-hover: #f7f7f7;
+
+// body colors
+$body-color: rgba(150,150,150,0.1);
+$body-text-color: #222;
+$body-link: #008f95;
+$body-hover: #94618e;
+$title-color: $oxblood;
+$subtitle-color: #000;
+
+$table-row-color: rgba($body-text-color,0.1);
+$divider-color: rgba($body-text-color,0.2);

@@ -1,0 +1,15 @@
+{
+	"version": 3,
+	"file": "main.css",
+	"sources": [
+		"../scss/patterns/main.scss",
+		"../scss/patterns/_atoms.scss",
+		"../scss/patterns/_molecules.scss",
+		"../scss/patterns/_organisms.scss",
+		"../scss/patterns/_templates.scss",
+		"../scss/patterns/_page-templates.scss",
+		"../scss/patterns/_layout.scss"
+	],
+	"names": [],
+	"mappings": ""
+}

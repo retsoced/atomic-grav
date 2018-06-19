@@ -1,0 +1,105 @@
+// --------
+
+.left {
+  text-align: left;
+}
+
+.right {
+  text-align: right;
+}
+
+.center {
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.justify {
+  text-align: justify;
+}
+
+.hidden-sm {
+  display: none;
+}
+
+// List (UL/OL) overrides
+
+ol.list-flat-margin, ul.list-flat-margin, .list-flat-margin ol, .list-flat-margin ul {
+  margin-left: -20px;
+}
+
+.flex-list {
+  ul {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 0 0 50px 0;
+    padding: 0 0 0 25px;
+
+    li {
+      display: inline-block;
+      position: relative;
+      flex: 1 1 auto;
+      width: 25%;
+      height: auto;
+      padding: 12px;
+    }
+  }
+}
+
+//--------
+// Tables on a black background
+.style-reversed-full {
+  table {
+    @include font-smoothing;
+
+    border: 1px solid rgba(125,125,125, .6);
+
+    thead, th {
+      background: rgba(125,125,125, .5);
+    }
+
+    &.alternate-rows {
+      tr:nth-child(even) {
+        @include font-smoothing;
+        background: rgba($table-row-color, .15);
+      }
+    }
+  }
+}
+
+//--------
+// table text centered/middle in cells
+table.center-middle {
+  th,tr,td {
+    vertical-align: middle;
+    text-align: center;
+  }
+}
+
+//--------
+// table text left/top in cells
+table.left {
+  tr,td,th {
+    vertical-align: top;
+    text-align: left !important;
+  }
+}
+
+//--------
+// table text left/middle in cells
+table.left-middle {
+  th,tr,td {
+    vertical-align: middle;
+    text-align: left;
+  }
+}
+
+//-------
+// add more padding to the cells
+table.more-padding {
+  th,tr,td {
+    padding: $gutter $gutter * 2;
+  }
+}

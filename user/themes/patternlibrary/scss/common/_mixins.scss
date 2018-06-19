@@ -1,0 +1,92 @@
+//--------
+// Mixins
+
+
+//--------
+// Toggle element visibility
+// @switch        Modifier strings: 'hide'/'show'
+@mixin elm-toggle($switch) {
+  @if ($switch == 'hide') {
+    border: 0;
+    clip: rect(0 0 0 0);
+    height: 1px;
+    margin: -1px;
+    overflow: hidden;
+    padding: 0;
+    position: absolute;
+    width: 1px;
+  } @else if ($switch == 'show') {
+    clip: auto;
+    height: auto;
+    margin: 0;
+    overflow: visible;
+    position: static !important;
+    width: auto;
+  }
+}
+
+
+//--------
+// Clearfix element
+// The tried and true clearfix hack allows us to contain floats without resorting to presentational markup.
+@mixin clearfix() {
+  &:before,
+  &:after {
+    content: "";
+    display: table;
+  }
+  &:after {
+    clear: both;
+  }
+}
+
+//--------
+// Text overflow
+// Truncate text with an ellipsis. Can be used on block or inline-block elements only.
+@mixin text-truncate() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
+//----------
+// Accounts for light text on a dark background font rendering issues
+//
+@mixin font-smoothing {
+  -webkit-font-smoothing: antialiased;
+  -moz-font-smoothing: antialiased;
+  -o-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+// ------------
+// transform shortcut for all browsers
+//
+// usage example : @include transform (scale(1.25) rotate(10deg) translate(20px,30px));
+// MDN for more info: https://developer.mozilla.org/en-US/docs/Web/CSS/transform
+//
+@mixin transform ( $allTheThings ) {
+  transform: $allTheThings;
+  -webkit-transform: $allTheThings;
+  -moz-transform: $allTheThings;
+  -ms-transform: $allTheThings;
+  -o-transform: $allTheThings;
+}
+
+// breakpoints
+@mixin for-phone-only {
+  @media (max-width: 599px) { @content; }
+}
+@mixin for-tablet-portrait-up {
+  @media (min-width: 600px) { @content; }
+}
+@mixin for-tablet-landscape-up {
+  @media (min-width: 900px) { @content; }
+}
+@mixin for-desktop-up {
+  @media (min-width: 1200px) { @content; }
+}
+@mixin for-big-desktop-up {
+  @media (min-width: 1800px) { @content; }
+}
