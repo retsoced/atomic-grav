@@ -1,30 +1,50 @@
 # Atomic Pattern Library - GRAV project
 
+## Table of content
+
+- [Introduction](#introduction)
+    - [Why Atomic?](#why-atomic)
+    - [What's GRAV?](#whats-grav)
+- [Site Setup](#site-setup)
+    - [Installation](#installation)
+    - [Plugins](#plugins)
+- [Page setup](#page-setup)
+    - [Upload the page tree file](#upload-the-page-tree-file)
+    - [Go to the import view](#go-to-the-import-view)
+    - [Import the uploaded page tree file](#import-the-uploaded-page-tree-file)
+- [License](#license)
+- [Links](#links)
+
+## Introduction
+
 This project is the mixture of two things I am extremely passionate about; [GRAV](https://getgrav.org "Get GRAV - the best Flat-file CMS platform") and Pattern Libraries.
 
 The pattern library is a base framework for you to be able to take a running start at implementing a comprehensive and well thought out system for identifying and communicating patterns and their interactions with your design and development teams.
 
-**Why Atomic?**
+### Why Atomic?
 
 Atomic design is methodology for creating design systems. There are five distinct levels in atomic design: Atoms, Molecules,  Organisms, Templates and Pages. This structure creates a system of clearly defined relationships in terms that are easy to understand.
 
 For more info on Atomic Design, [checkout what Brad Frost has to say about it](http://bradfrost.com/blog/post/atomic-web-design/ "Atomic Web Design").
 
-**Adding GRAV to the mix**
+### What's GRAV?
 
 Grav is a **Fast**, **Simple**, and **Flexible**, file-based Web-platform.  There is **Zero** installation required.  Just extract the ZIP archive, and you are already up and running.  It follows similar principles to other flat-file CMS platforms, but has a different design philosophy than most. Grav comes with a powerful **Package Management System** to allow for simple installation and upgrading of plugins and themes, as well as simple updating of Grav itself.
 
 #### [Checkout GRAV](https://getgrav.org "Get GRAV - the best Flat-file CMS platform")
 
-## Getting started
+## Site Setup
 
 So you want to do this? Great, start by either cloning this repo of forking it.
 
-1. Clone the [Pattern library repository](https://github.com/retsoced/grav-pattern-library-template) to a folder in the webroot of your server, e.g. `~/webroot/grav`. Launch a **terminal** or **console** and navigate to the webroot folder:
+### Installation
+
+1. Clone the [Pattern library repository](https://github.com/retsoced/grav-pattern-library-template) to a folder in the webroot of your server, e.g. `~/webroot/grav`. Launch the **console**:
    ```
    $ cd ~/webroot
    $ git clone git@github.com:retsoced/grav-pattern-library-template.git
    ```
+### Plugins
 
 I have installed a base selection of [plugins](https://getgrav.org/downloads/plugins) to try and make the pattern library as useful as possible, and they are the following:
 
