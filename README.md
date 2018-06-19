@@ -1,6 +1,10 @@
 # Atomic Pattern Library - GRAV project
 
-## Table of content
+<a href="http://pattern-library.decostyer.design">
+  <img src="https://screenshots.firefox.com/nbuXBelbu3sHTdUN/pattern-library.decoster.design" alt="Pattern Library" />
+</a>
+
+## Table of contents
 
 - [Introduction](#introduction)
     - [Why Atomic?](#why-atomic)
