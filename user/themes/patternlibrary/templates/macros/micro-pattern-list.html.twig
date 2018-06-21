@@ -1,0 +1,49 @@
+{#
+  ----------------------------------------------------------
+  This Macro controls the output of a Parent patterns micro-patterns.
+
+  1.) To make it easy on the dev, if the micro-pattern header options do not exist, it assumes they are not there on purpose, the same as if it were set to disabled.
+  2.) All pattern names must be added to the array in CamelCase without quotes, and comma separated.
+  3.) Taxonomy is always set to look at the patterns category since were are talking about micro-patterns.
+  4.) This file is included in the patterns.html.twig template file so it is accessible by default for all patterns.
+  5.) All Pattern pages should have the following in the header to use micro-patterns:
+
+      micro_patterns:
+        enabled: boolean (true or false)
+        pattern_names: [CamelCaseName,CamelCaseName,NoQuotes]
+
+  -----------------------------------------------------------
+#}
+
+{% macro microPattern(mpNames) %}
+
+  <section class="micro-patterns">
+    <header>
+      <h3><i class="fa fa-cubes"></i> Micro-patterns</h3>
+      <hr>
+    </header>
+    <article>
+      <table class="definition-table">
+        <thead>
+          <tr>
+            <th class="title">Title</th>
+            <th class="link">Link</th>
+          </tr>
+        </thead>
+        <tbody>
+          {% for i, mpost in taxonomy.findTaxonomy({'category': ['patterns']}) %}
+            {% for j, name in mpNames %}
+            {% if (name == mpost.title) %}
+            <tr>
+              <td class="title">{{ name }}</td>
+              <td class="link"><i class="fa fa-rocket"></i> <a href="{{ mpost.url }}" title="view the {{ mpost.title }} micro-pattern">view it!</a></td>
+            </tr>
+            {% endif %}
+            {% endfor %}
+          {% endfor %}
+        </tbody>
+      </table>
+    </article>
+  </section>
+
+{% endmacro %}

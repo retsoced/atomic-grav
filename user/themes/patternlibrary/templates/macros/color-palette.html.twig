@@ -1,0 +1,19 @@
+{% macro colorSwatch(swGrupo, swName, swHex, swRgb) %}
+  {% if (swName is defined)  or (swHex is defined) or (swRgb is defined) %}
+    {% if swGrupo != 'null' %}
+      <div class="grid-cell tall">
+    {% else %}
+      <div class="grid-cell">
+    {% endif %}
+      <div class="color-swatch {{ swName }}" style="background: rgb({{ swRgb }})"></div>
+      <div class="color-detail">
+        {% if swGrupo != 'null' %}
+          <p class="type">{{ swGrupo }}</p>
+        {% endif %}
+        <p class="name">{{ swName }}</p>
+        <p class="hex-val">#{{ swHex }}</p>
+        <p class="rgb-val"> rgb({{ swRgb }})</p>
+      </div>
+    </div>
+  {% endif %}
+{% endmacro %}

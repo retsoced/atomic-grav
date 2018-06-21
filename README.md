@@ -7,15 +7,13 @@
 - [Introduction](#introduction)
     - [Why Atomic?](#why-atomic)
     - [What's GRAV?](#whats-grav)
-- [Site Setup](#site-setup)
-    - [Installation](#installation)
+- [Installation](#installation)
     - [Plugins](#plugins)
-- [Page setup](#page-setup)
-    - [Upload the page tree file](#upload-the-page-tree-file)
-    - [Go to the import view](#go-to-the-import-view)
-    - [Import the uploaded page tree file](#import-the-uploaded-page-tree-file)
-- [License](#license)
-- [Links](#links)
+- [Development](#development)
+  - [Theme](#theme)
+  - [Patterns](#patterns)
+
+---
 
 ## Introduction
 
@@ -35,11 +33,11 @@ Grav is a **Fast**, **Simple**, and **Flexible**, file-based Web-platform.  Ther
 
 #### [Checkout GRAV](https://getgrav.org "Get GRAV - the best Flat-file CMS platform")
 
-## Site Setup
+---
 
-So you want to do this? Great, start by either cloning this repo of forking it.
+## Installation
 
-### Installation
+So you want to do this? Great, start by either cloning this repo or forking it.
 
 1. Clone the [Pattern library repository](https://github.com/retsoced/grav-pattern-library-template) to a folder in the webroot of your server, e.g. `~/webroot/grav`. Launch the **console**:
    ```
@@ -64,7 +62,13 @@ I have installed a base selection of [plugins](https://getgrav.org/downloads/plu
 * [SEO](https://github.com/paulmassen/grav-plugin-seo)
 * [Simplesearch](https://github.com/getgrav/grav-plugin-simplesearch)
 
-The theme is a custom theme built using Sass and Simple Grid. Using Simple Grid enables the site to have a modern responsive grid system behind the scenes, but it's also extremely well built, supported and lightweight. The styles are broken up into groups:
+---
+
+## Development
+
+The theme is custom built using Sass & Simple Grid. Using [Simple Grid](http://simple-grid.io) enables the site to have a modern responsive grid system behind the scenes, but it's also extremely well built, supported and lightweight. The styles are broken up into groups:
+
+### Theme
 
 * **common** : shared styles for the entire site, theme and patterns.
 * **patterns** : specific definitions for **just** the patterns. This will help you keep track of where all of your interactions live and keep the water running between the patterns and the theme clean and clear.
@@ -75,17 +79,20 @@ Everything is downloaded and installed for you to make it easy to get started, s
 #### Dev note:   
 I don't have Gulp setup and running yet to make the local webserver run automatically or to compile the JavaScript or Sass yet. I use [Codekit](https://codekitapp.com/) to compile the dependency files and libsass to compile the styles into the `/user/themes/patterlibrary/css` folder. That integration is coming in the next release.
 
+### Patterns
+
+The patterns are designed as groups: Atoms, Molecules, Organisms, Templates and Pages. The patterns already in place are place holders to get you started along the right path, to make it easier to get to a useful point and to create a series of interactions that have utility across many different sites, to forge a common language from which to build your own series of patterns that define your site.
+
+**Adding Patterns**   
+Creating patterns is just creating pages and folders. Name the folder as the name of the pattern and use the corresponding Markdown file for each kind of pattern. atom.md for Atoms, molecule.md for Molecules and so on. The level of detail is up to you, but adding more detail can make the pattern more useful and easier to use and keep consistent across sites and other patterns.
+
 ---
 
-2. Install the **plugin** and **theme dependencies** by using the [Grav CLI application](https://learn.getgrav.org/advanced/grav-cli) `bin/grav`:
-   ```
-   $ cd ~/webroot/grav
-   $ bin/grav install
-   ```
+## Grav Development
 
-Check out the [install procedures](https://learn.getgrav.org/basics/installation) for more information.
+Using the [Grav CLI application](https://learn.getgrav.org/advanced/grav-cli)
 
-# Adding Functionality
+### Adding Functionality
 
 You can download [plugins](https://getgrav.org/downloads/plugins) or [themes](https://getgrav.org/downloads/themes) manually from the appropriate tab on the [Downloads page on https://getgrav.org](https://getgrav.org/downloads), but the preferred solution is to use the [Grav Package Manager](https://learn.getgrav.org/advanced/grav-gpm) or `GPM`:
 

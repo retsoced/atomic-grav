@@ -1,0 +1,22 @@
+{% import 'macros/font-awesome.html.twig' as icons %}
+{% import 'macros/micro-pattern-list.html.twig' as mcps %}
+
+{% extends 'partials/base.html.twig' %}
+
+{% block content %}
+    <main id="body" class="large-12 columns category no-pad home-page">
+
+    {{ page.content }}
+
+    {% block footer %}
+        <footer>
+          <nav id="linkToTop">
+            <a href="#" title="Back to top">{{ icons.faIcon('chevron-circle-up') }}</a>
+            <span>back to top</span>
+          </nav>
+        </footer>
+      {% endblock %}
+
+      {% block navigation %}{% endblock %}
+  </main>
+{% endblock %}
