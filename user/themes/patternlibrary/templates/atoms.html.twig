@@ -1,23 +1,22 @@
+{% import 'macros/font-awesome.html.twig' as icons %}
 {% extends 'partials/base.html.twig' %}
 {% set tags = page.taxonomy.tag %}
-{% if tags %}
-    {% set progress = page.collection({'items':{'@taxonomy':{'category': 'docs', 'tag': tags}},'order': {'by': 'default', 'dir': 'asc'}}) %}
-{% else %}
-    {% set progress = page.collection({'items':{'@taxonomy':{'category': 'docs'}},'order': {'by': 'default', 'dir': 'asc'}}) %}
-{% endif %}
 
-{% block navigation %}
-	<div id="navigation">
-	{% if not progress.isFirst(page.path) %}
-	    <a class="nav nav-prev" href="{{ progress.nextSibling(page.path).url }}"> <i class="fa fa-chevron-left"></i></a>
-	{% endif %}
-
-	{% if not progress.isLast(page.path) %}
-	    <a class="nav nav-next" href="{{ progress.prevSibling(page.path).url }}"><i class="fa fa-chevron-right"></i></a>
-	{% endif %}
-	</div>
-{% endblock %}
+{% block header%}
+  <header class="{{ page.taxonomy.category[0] }}">
+    {% if ( header.status == 'incomplete' ) %}
+      <div class="pattern-status incomplete">
+        {{ icons.faIcon('fas fa-exclamation-circle') }}<span>Pattern Incomplete</span>
+      </div>
+    {% else %}
+      <div class="pattern-status complete">
+        {{ icons.faIcon('fas fa-check-circle') }}<span>Pattern Complete</span>
+      </div>
+    {% endif %}
+    <h1 class="page-title">{% if header.title %}{{ header.title }} {% endif %}</h1>
+  </header>
+{% endblock%}
 
 {% block content %}
-    {% include 'partials/page.html.twig' %}
+  {% include 'partials/page.html.twig' %}
 {% endblock %}

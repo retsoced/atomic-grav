@@ -16,17 +16,10 @@ class __TwigTemplate_c325b003605384044a95e664589c9d9d4c280f769bb5e3e5abea40e5093
     protected function doDisplay(array $context, array $blocks = array())
     {
         // line 1
-        echo "<header class=\"page-header\">
-  <h1 class=\"page-title\">";
-        // line 2
-        echo $this->getAttribute(($context["page"] ?? null), "title", array());
-        echo "</h1>
-</header>
-
-<section class=\"main-content\">
+        echo "<section class=\"main-content\">
   <article>
   \t";
-        // line 7
+        // line 3
         echo $this->getAttribute(($context["page"] ?? null), "content", array());
         echo "
   </article>
@@ -50,7 +43,7 @@ class __TwigTemplate_c325b003605384044a95e664589c9d9d4c280f769bb5e3e5abea40e5093
 
     public function getDebugInfo()
     {
-        return array (  30 => 7,  22 => 2,  19 => 1,);
+        return array (  23 => 3,  19 => 1,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */

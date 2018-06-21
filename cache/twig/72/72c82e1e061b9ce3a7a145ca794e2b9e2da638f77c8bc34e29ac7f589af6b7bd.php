@@ -30,9 +30,9 @@ class __TwigTemplate_e137b8a8546839ab68c82685fa128b6e8ee3a21b75c5c881e3c63c53c7b
         ob_start();
         try {
             // line 2
-            echo "    <i class=\"fa fa-";
+            echo "    <span class=\"icon\"><i class=\"";
             echo ($context["name"] ?? null);
-            echo "\"></i>
+            echo "\"></i></span>
 ";
         } catch (Exception $e) {
             ob_end_clean();

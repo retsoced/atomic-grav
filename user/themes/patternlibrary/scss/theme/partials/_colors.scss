@@ -1,0 +1,21 @@
+$white: rgb(255,255,255);  //fff
+$gray10: rgb(230,230,230); // 10% - e6e6e6
+$gray20: rgb(204,204,204); // 20% - cccccc
+$gray30: rgb(179,179,179); // 30% - b3b3b3
+$gray40: rgb(153,153,153); // 40% - 999999
+$gray50: rgb(128,128,128); // 50% - 808080
+$gray60: rgb(102,102,102); // 60% - 666666
+$gray70: rgb(77,77,77);    // 70% - 4d4d4d
+$gray80: rgb(51,51,51);    // 80% - 333333
+$gray90: rgb(26,26,26);    // 90% - 1a1a1a
+$black: rgb(0,0,0);       // #000
+
+// Info block colors --------------------------
+$info-blue: rgb(75,116,160);
+$info-blue-bg: lighten($info-blue,40%);
+$info-yellow: rgb(240,179,126);
+$info-yellow-bg: lighten($info-yellow,40%);;
+$info-red: rgb(211,50,49);
+$info-red-bg: lighten($info-red,40%);
+$info-green: rgb(92,184,92);
+$info-green-bg: lighten($info-green,40%);

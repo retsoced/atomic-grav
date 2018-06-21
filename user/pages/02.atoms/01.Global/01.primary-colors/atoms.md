@@ -2,6 +2,8 @@
 title: 'Primary colors'
 taxonomy:
     category: [atoms, patterns]
+
+status: complete
 ---
 
  Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus et lorem ligula. Duis tempus metus nec vestibulum congue. Suspendisse bibendum orci risus, non posuere quam gravida in. Nam quam purus, gravida vitae mollis ut, rutrum ac leo. Suspendisse massa odio, lobortis elementum dictum vitae, malesuada id neque. Etiam aliquam egestas leo sed tempus. Phasellus quis neque elementum, porttitor est et, finibus purus. Maecenas at libero nulla. Quisque elementum lectus vitae lectus dictum luctus. Sed quis commodo mi. Fusce viverra diam at nulla porta congue et eget augue. Maecenas tortor est, feugiat nec tincidunt a, fermentum a nisi.

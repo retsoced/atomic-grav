@@ -30,43 +30,373 @@
 		"oAP": "\/assets\/.gitkeep",
 		"oF": 0
 		},
-	"\/assets\/280c5a235eb9caf6c61296bac7da3101.css": {
+	"\/assets\/00545c7997bc708d3e85109564589194.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/assets\/280c5a235eb9caf6c61296bac7da3101-min.css",
+		"oAP": "\/assets\/00545c7997bc708d3e85109564589194-min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"\/assets\/39f2812339f9816bdffad45ec8b44852.js": {
+	"\/assets\/0354a9c152f04588be7cb7f7600499b8.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/0354a9c152f04588be7cb7f7600499b8-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/05c2cb653e8ab333c6fce7b806a6730a.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/05c2cb653e8ab333c6fce7b806a6730a-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/157ac8095465c9cf6b355d854fb4581f.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/157ac8095465c9cf6b355d854fb4581f-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/18d118ec85613908eaa8356bf71bec43.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/18d118ec85613908eaa8356bf71bec43-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/1f83cfae647bdfcd3a53fa3c17f92c85.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/1f83cfae647bdfcd3a53fa3c17f92c85-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/378edf16cd4c529e9079f1bb85f1adf8.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/378edf16cd4c529e9079f1bb85f1adf8-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/3cdc329bd9c6b09bac5382afbdc2ed79.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/3cdc329bd9c6b09bac5382afbdc2ed79-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/3e729d47de45116f1b54443390703a50.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/3e729d47de45116f1b54443390703a50-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/423191da45a7c297b592332de2c9d828.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/423191da45a7c297b592332de2c9d828-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/4a314724e2274892f0b9bf392e2a3d43.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/4a314724e2274892f0b9bf392e2a3d43-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/4ba82e06fb4e56007466aefe94f1428d.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/4ba82e06fb4e56007466aefe94f1428d-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/519eb05d0dc4fbaac2863e79a89cec6e.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/519eb05d0dc4fbaac2863e79a89cec6e-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/5e17300795ee392772fbabe62131c4fb.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/5e17300795ee392772fbabe62131c4fb-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/5ea9a6cd39a6ac666cf8d305d787c06c.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/5ea9a6cd39a6ac666cf8d305d787c06c-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/627c1236972f57caedc110be51502a3b.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/627c1236972f57caedc110be51502a3b-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/6d09be6656dea183670e624beff86428.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/6d09be6656dea183670e624beff86428-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/6e86ef31e362bf2bb431cf680209a378.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/6e86ef31e362bf2bb431cf680209a378-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/6f49132a91274087b13636420445b194.js": {
 		"ft": 64,
 		"ma": 0,
 		"mi": 1,
 		"oA": 0,
-		"oAP": "\/assets\/39f2812339f9816bdffad45ec8b44852-min.js",
+		"oAP": "\/assets\/6f49132a91274087b13636420445b194-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
 		},
-	"\/assets\/8cb069a5b21efc7b2379f3136f31273f.css": {
+	"\/assets\/7110d7b5296d2b07fca24cc49d641c7e.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/assets\/8cb069a5b21efc7b2379f3136f31273f-min.css",
+		"oAP": "\/assets\/7110d7b5296d2b07fca24cc49d641c7e-min.css",
 		"oF": 0,
 		"oS": 3
 		},
-	"\/assets\/b8e24bc35a544660fd5baa05dc8bfb93.css": {
+	"\/assets\/7ac1b8aced651c6ea45dd0835cb4435c.css": {
 		"aP": 1,
 		"bl": 0,
 		"ft": 16,
 		"ma": 0,
 		"oA": 0,
-		"oAP": "\/assets\/b8e24bc35a544660fd5baa05dc8bfb93-min.css",
+		"oAP": "\/assets\/7ac1b8aced651c6ea45dd0835cb4435c-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/820558af8816f641c200b24002b3b934.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/820558af8816f641c200b24002b3b934-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/85e122bdcf2c45cc6ddd753799bcfed2.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/85e122bdcf2c45cc6ddd753799bcfed2-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/9deb069e66b46158ca34cc74221ecd43.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/9deb069e66b46158ca34cc74221ecd43-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/b27b9ae6e197668ed7fc99721dd09036.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/b27b9ae6e197668ed7fc99721dd09036-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/b2cb2d3bef09ec68df9486ee3dfa1f24.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/b2cb2d3bef09ec68df9486ee3dfa1f24-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/b76fe1dfd3ae181fabec4444e5823cd1.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/b76fe1dfd3ae181fabec4444e5823cd1-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/b85d1fed6a4a7ae318d9965be2fb571a.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/b85d1fed6a4a7ae318d9965be2fb571a-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/bee40616d8e857189a0383442bb8e46d.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/bee40616d8e857189a0383442bb8e46d-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/bf9b6191b5f644461867a5d42b4f4119.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/bf9b6191b5f644461867a5d42b4f4119-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/c18e6af2442a7ff2e7dbc56ab0a2dbe5.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/c18e6af2442a7ff2e7dbc56ab0a2dbe5-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/c2c5d9959b5d7db040ca892bf27796dc.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/c2c5d9959b5d7db040ca892bf27796dc-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/c7c18beb8b9835408f78173033e5067a.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/c7c18beb8b9835408f78173033e5067a-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/c89af238fd7283244c89d235add1b23d.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/c89af238fd7283244c89d235add1b23d-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/d1d4f0c7a7f07294df4a7899fc03632f.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/d1d4f0c7a7f07294df4a7899fc03632f-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/d2cd7abece35a941ae873708545f42f8.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/d2cd7abece35a941ae873708545f42f8-min.css",
+		"oF": 0,
+		"oS": 3
+		},
+	"\/assets\/d5387f33cd0fd2a28b3b3068b448d82b.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/assets\/d5387f33cd0fd2a28b3b3068b448d82b-min.css",
 		"oF": 0,
 		"oS": 3
 		},
@@ -209,33 +539,11 @@
 		"opt": 0,
 		"q": 100
 		},
-	"\/images\/7\/8\/4\/1\/e\/7841e27a64221128dae33bc2097f3b27b351eda6-thumb-html.png": {
-		"ft": 32768,
-		"iS": 5492,
-		"oA": 0,
-		"oAP": "\/images\/7\/8\/4\/1\/e\/7841e27a64221128dae33bc2097f3b27b351eda6-thumb-html.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
 	"\/images\/c\/9\/a\/4\/d\/c9a4dfae4868a3765a1293015b44ac726ac81843-twitter.png": {
 		"ft": 32768,
 		"iS": 1300,
 		"oA": 0,
 		"oAP": "\/images\/c\/9\/a\/4\/d\/c9a4dfae4868a3765a1293015b44ac726ac81843-twitter.png",
-		"oF": 0,
-		"oIPL": 0,
-		"opt": 0,
-		"oT": 1,
-		"q": 100
-		},
-	"\/images\/c\/c\/6\/2\/6\/cc626728245906fc7d371700c9e0b867babc2420-thumb-html.png": {
-		"ft": 32768,
-		"iS": 13305,
-		"oA": 0,
-		"oAP": "\/images\/c\/c\/6\/2\/6\/cc626728245906fc7d371700c9e0b867babc2420-thumb-html.png",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 0,
@@ -5629,7 +5937,7 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"\/user\/pages\/05.templates\/01.Blog Index\/templates.md": {
+	"\/user\/pages\/05.templates\/01.Blog Index\/name.md": {
 		"cB": 0,
 		"cS": 0,
 		"eF": 1,
@@ -5638,7 +5946,7 @@
 		"eSQ": 1,
 		"ft": 4096,
 		"oA": 1,
-		"oAP": "\/user\/pages\/05.templates\/01.Blog Index\/templates.html",
+		"oAP": "\/user\/pages\/05.templates\/01.Blog Index\/name.html",
 		"oF": 1,
 		"oFM": 0,
 		"oS": 0,
@@ -20376,6 +20684,16 @@
 		"rFN": 0,
 		"uCM": 0
 		},
+	"\/user\/themes\/patternlibrary\/css\/fa-svg-with-js.css": {
+		"aP": 1,
+		"bl": 0,
+		"ft": 16,
+		"ma": 0,
+		"oA": 0,
+		"oAP": "\/user\/themes\/patternlibrary\/css\/fa-svg-with-js-min.css",
+		"oF": 0,
+		"oS": 3
+		},
 	"\/user\/themes\/patternlibrary\/css\/main.css": {
 		"aP": 1,
 		"bl": 0,
@@ -20506,6 +20824,16 @@
 		"mi": 1,
 		"oA": 0,
 		"oAP": "\/user\/themes\/patternlibrary\/js\/featherlight.min-min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 0
+		},
+	"\/user\/themes\/patternlibrary\/js\/fontawesome-all.min.js": {
+		"ft": 64,
+		"ma": 0,
+		"mi": 1,
+		"oA": 0,
+		"oAP": "\/user\/themes\/patternlibrary\/js\/fontawesome-all.min-min.js",
 		"oF": 0,
 		"sC": 3,
 		"tS": 0
@@ -20829,6 +21157,19 @@
 		"oS": 0,
 		"uL": 1
 		},
+	"\/user\/themes\/patternlibrary\/scss\/theme\/partials\/_colors.scss": {
+		"aP": 0,
+		"bl": 0,
+		"dP": 10,
+		"dS": 0,
+		"ft": 4,
+		"ma": 0,
+		"oA": 1,
+		"oAP": "\/user\/themes\/patternlibrary\/scss\/theme\/partials\/_colors.css",
+		"oF": 0,
+		"oS": 0,
+		"uL": 1
+		},
 	"\/user\/themes\/patternlibrary\/scss\/theme\/theme.scss": {
 		"aP": 0,
 		"bl": 0,
@@ -20862,6 +21203,13 @@
 		"oA": 1,
 		"oAP": "\/user\/themes\/patternlibrary\/templates\/error.html.twig",
 		"oF": 1
+		},
+	"\/user\/themes\/patternlibrary\/templates\/general.html.twig": {
+		"cB": 0,
+		"ft": 8192,
+		"oA": 1,
+		"oAP": "\/user\/themes\/patternlibrary\/templates\/general.html.twig",
+		"oF": 0
 		},
 	"\/user\/themes\/patternlibrary\/templates\/index.html.twig": {
 		"cB": 0,

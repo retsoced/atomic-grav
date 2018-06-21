@@ -7,8 +7,8 @@ class __TwigTemplate_8c5a9f2791af21ace7beecd37fc42a81bc8aa168d8bb8eb3295a376d87c
     {
         parent::__construct($env);
 
-        // line 1
-        $this->parent = $this->loadTemplate("docs.html.twig", "pattern-type.html.twig", 1);
+        // line 2
+        $this->parent = $this->loadTemplate("general.html.twig", "pattern-type.html.twig", 2);
         $this->blocks = array(
             'content' => array($this, 'block_content'),
         );
@@ -16,26 +16,63 @@ class __TwigTemplate_8c5a9f2791af21ace7beecd37fc42a81bc8aa168d8bb8eb3295a376d87c
 
     protected function doGetParent(array $context)
     {
-        return "docs.html.twig";
+        return "general.html.twig";
     }
 
     protected function doDisplay(array $context, array $blocks = array())
     {
+        // line 1
+        $context["icons"] = $this->loadTemplate("macros/font-awesome.html.twig", "pattern-type.html.twig", 1);
+        // line 2
         $this->parent->display($context, array_merge($this->blocks, $blocks));
     }
 
-    // line 3
+    // line 4
     public function block_content($context, array $blocks = array())
     {
-        // line 4
+        // line 5
         echo "\t<div id=\"chapter\">
-    \t<div id=\"body-inner\">
-\t\t\t";
+\t<header class=\"";
         // line 6
+        echo $this->getAttribute($this->getAttribute($this->getAttribute(($context["page"] ?? null), "taxonomy", array()), "category", array()), 0, array(), "array");
+        echo "\">
+\t\t";
+        // line 7
+        if (($this->getAttribute(($context["header"] ?? null), "status", array()) == "incomplete")) {
+            // line 8
+            echo "\t\t\t<div class=\"pattern-status incomplete\">
+\t\t\t\t";
+            // line 9
+            echo $context["icons"]->getfaIcon("fas fa-exclamation-circle");
+            echo "<span class=\"label\">Pattern Incomplete</span>
+\t\t\t</div>
+\t\t";
+        } else {
+            // line 12
+            echo "\t\t\t<div class=\"pattern-status complete\">
+\t\t\t\t";
+            // line 13
+            echo $context["icons"]->getfaIcon("fas fa-check-circle");
+            echo "<span class=\"label\">Pattern Complete</span>
+\t\t\t</div>
+\t\t";
+        }
+        // line 16
+        echo "\t\t<h1 class=\"page-title\">";
+        if ($this->getAttribute(($context["header"] ?? null), "title", array())) {
+            echo $this->getAttribute(($context["header"] ?? null), "title", array());
+            echo " ";
+        }
+        echo "</h1>
+\t</header>
+
+\t\t<div id=\"body-inner\">
+\t\t\t";
+        // line 20
         echo $this->getAttribute(($context["page"] ?? null), "content", array());
         echo "
 \t\t</div>
-    </div>
+\t</div>
 ";
     }
 
@@ -51,7 +88,7 @@ class __TwigTemplate_8c5a9f2791af21ace7beecd37fc42a81bc8aa168d8bb8eb3295a376d87c
 
     public function getDebugInfo()
     {
-        return array (  35 => 6,  31 => 4,  28 => 3,  11 => 1,);
+        return array (  72 => 20,  61 => 16,  55 => 13,  52 => 12,  46 => 9,  43 => 8,  41 => 7,  37 => 6,  34 => 5,  31 => 4,  27 => 2,  25 => 1,  11 => 2,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */
