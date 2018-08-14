@@ -16,7 +16,7 @@
 ---
 
 ## NOTE:   
-This project is still under active development and is likely to change dramatically without notice. While I am trying to be forward thinking while I work, I may change course and introduce major, breaking changes to the theme during this time up until v1 is released. I don't yet have a timeframe, so if you want to use this theme, please consider it in early Beta stages of development.
+This project is still under active development and is likely to change dramatically without notice. While I am trying to be forward thinking while I work, I may change course and introduce major, breaking changes to the theme during this time up until v.1.0.0 is released. I don't yet have a timeframe, so if you want to use this theme, please consider it in early Beta stages of development.
 
 ## Introduction
 
@@ -40,7 +40,7 @@ Grav is a **Fast**, **Simple**, and **Flexible**, file-based Web-platform.  Ther
 
 ## Installation
 
-So you want to do this? Great, start by either cloning this repo or forking it.
+So you want to do this? Great, start by either cloning this repo or forking it. The top tagged commit will always be the latest, stable version in the [master branch](https://github.com/retsoced/atomic-grav/tree/master). All work under the Development branch is to be treated as a beta releas and the tagged versions in the Development branch can be considered stable(ish).
 
 1. Clone the [Pattern library repository](https://github.com/retsoced/atomic-grav) to a folder in the webroot of your server, e.g. `~/webroot/grav`. Launch the **console**:
    ```
