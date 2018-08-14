@@ -88,34 +88,6 @@
 		"oAP": "\/backup\/.gitkeep",
 		"oF": 0
 		},
-	"\/bin\/composer.phar": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/bin\/composer.phar",
-		"oF": 0
-		},
-	"\/bin\/gpm": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/bin\/gpm",
-		"oF": 0
-		},
-	"\/bin\/grav": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/bin\/grav",
-		"oF": 0
-		},
-	"\/bin\/plugin": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/bin\/plugin",
-		"oF": 0
-		},
 	"\/cache": {
 		"ft": 65536,
 		"oA": 1,
@@ -227,31 +199,28 @@
 		"oAP": "\/index.php",
 		"oF": 0
 		},
-	"\/LICENSE": {
+	"\/LICENSE.md": {
 		"cB": 0,
-		"ft": 8192,
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
 		"oA": 1,
-		"oAP": "\/LICENSE",
-		"oF": 1
-		},
-	"\/LICENSE.txt": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/LICENSE.txt",
-		"oF": 0
+		"oAP": "\/LICENSE.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
 		},
 	"\/logs": {
 		"ft": 65536,
 		"oA": 1,
 		"oAP": "\/build\/logs",
-		"oF": 0
-		},
-	"\/README.html": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/README.html",
 		"oF": 0
 		},
 	"\/README.md": {
@@ -9214,13 +9183,6 @@
 		"oAP": "\/tmp\/Grav-5b2cb43df3df9\/getgrav-grav-plugin-admin-174f169\/vendor\/autoload.php",
 		"oF": 0
 		},
-	"\/tmp\/Grav-5b2cb43df3df9\/getgrav-grav-plugin-admin-174f169\/vendor\/bin\/picofeed": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/tmp\/Grav-5b2cb43df3df9\/getgrav-grav-plugin-admin-174f169\/vendor\/bin\/picofeed",
-		"oF": 0
-		},
 	"\/tmp\/Grav-5b2cb43df3df9\/getgrav-grav-plugin-admin-174f169\/vendor\/composer\/autoload_classmap.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -13945,13 +13907,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/tmp\/Grav-5b2cb467633b4\/getgrav-grav-plugin-login-6d4ac13\/vendor\/birke\/rememberme\/example\/templates\/user_is_logged_in.php",
-		"oF": 0
-		},
-	"\/tmp\/Grav-5b2cb467633b4\/getgrav-grav-plugin-login-6d4ac13\/vendor\/birke\/rememberme\/example\/tokens\/.gitkeep": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/tmp\/Grav-5b2cb467633b4\/getgrav-grav-plugin-login-6d4ac13\/vendor\/birke\/rememberme\/example\/tokens\/.gitkeep",
 		"oF": 0
 		},
 	"\/tmp\/Grav-5b2cb467633b4\/getgrav-grav-plugin-login-6d4ac13\/vendor\/birke\/rememberme\/LICENSE": {
@@ -21428,13 +21383,6 @@
 		"ft": 8192,
 		"oA": 0,
 		"oAP": "\/user\/plugins\/admin\/vendor\/autoload.php",
-		"oF": 0
-		},
-	"\/user\/plugins\/admin\/vendor\/bin\/picofeed": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/user\/plugins\/admin\/vendor\/bin\/picofeed",
 		"oF": 0
 		},
 	"\/user\/plugins\/admin\/vendor\/composer\/autoload_classmap.php": {
@@ -28984,13 +28932,6 @@
 		"oAP": "\/user\/plugins\/login\/vendor\/birke\/rememberme\/example\/templates\/user_is_logged_in.php",
 		"oF": 0
 		},
-	"\/user\/plugins\/login\/vendor\/birke\/rememberme\/example\/tokens\/.gitkeep": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/user\/plugins\/login\/vendor\/birke\/rememberme\/example\/tokens\/.gitkeep",
-		"oF": 0
-		},
 	"\/user\/plugins\/login\/vendor\/birke\/rememberme\/LICENSE": {
 		"cB": 0,
 		"ft": 8192,
@@ -36439,13 +36380,6 @@
 		"rFN": 0,
 		"uCM": 0
 		},
-	"\/vendor\/symfony\/console\/Resources\/bin\/hiddeninput.exe": {
-		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/vendor\/symfony\/console\/Resources\/bin\/hiddeninput.exe",
-		"oF": 0
-		},
 	"\/vendor\/symfony\/console\/Shell.php": {
 		"cB": 0,
 		"ft": 8192,
@@ -40304,7 +40238,7 @@
 	},
 "projectAttributes": {
 	"creationDate": 549127541,
-	"displayValue": "grav-pattern-library-template",
+	"displayValue": "atomic-grav",
 	"displayValueWasSetByUser": 0,
 	"iconImageName": "brackets_purple",
 	"iconImageWasSetByUser": 0
