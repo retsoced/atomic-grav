@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1529579560,
-    'checksum' => '3784a194240cba6877bea5f2b8533560',
+    'timestamp' => 1529882154,
+    'checksum' => '74e67700a6a6c5f38cbd409a68a83535',
     'files' => [
         'user/config' => [
             'media' => [
@@ -39,25 +39,25 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1529579557
+                'modified' => 1529882146
             ]
         ],
         'system/config' => [
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1526399966
+                'modified' => 1529656344
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1526399966
+                'modified' => 1529656344
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1526399966
+                'modified' => 1529656344
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1526399966
+                'modified' => 1529656344
             ]
         ],
         'user/plugins' => [
@@ -88,10 +88,6 @@ return [
             'plugins/shortcode-core' => [
                 'file' => 'user/plugins/shortcode-core/shortcode-core.yaml',
                 'modified' => 1529410521
-            ],
-            'plugins/codepen-embed' => [
-                'file' => 'user/plugins/codepen-embed/codepen-embed.yaml',
-                'modified' => 1529410523
             ],
             'plugins/seo' => [
                 'file' => 'user/plugins/seo/seo.yaml',
@@ -325,9 +321,6 @@ return [
                     'load' => true,
                     'url' => '//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css'
                 ]
-            ],
-            'codepen-embed' => [
-                'enabled' => true
             ],
             'seo' => [
                 'enabled' => true,

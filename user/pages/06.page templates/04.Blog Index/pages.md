@@ -1,9 +1,22 @@
 ---
-title: Overview
+title: 'Blog : Homepage'
 taxonomy:
-    category: [pages]
+    category:
+        - pages
+twittercardoptions: summary
+articleenabled: false
+musiceventenabled: false
+orgaenabled: false
+orga:
+    ratingValue: 2.5
+orgaratingenabled: false
+eventenabled: false
+personenabled: false
+restaurantenabled: false
+restaurant:
+    acceptsReservations: 'yes'
+    priceRange: $
 ---
-
 
 Let's face it: Writing content for the Web is tiresome. WYSIWYG editors help alleviate this task, but they generally result in horrible code, or worse yet, ugly web pages.
 

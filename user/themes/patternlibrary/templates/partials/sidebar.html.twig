@@ -1,34 +1,48 @@
-{% macro loop(page) %}
-  {% for p in page.children %}
-    {% if p.visible %}
-      {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}
-
-      {% if p.children.count < 0 %}
-        <li class="dd-item" data-nav-id="{{ p.route }}" data-link-url="{{p.url}}">
-          <a href="{{ p.url }}" title="{{ p.title }}">{{ p.title }}</a>
-          <!-- <span class="status-icon {{ p.header.status}}"></span> -->
-        </li>
-      {% endif %}
+{% macro loop(page, parent_loop) %}
+    {% if parent_loop|length > 0 %}
+        {% set data_level = parent_loop %}
+    {% else %}
+        {% set data_level = 0 %}
     {% endif %}
-  {% endfor %}
+    {% for p in page.children.visible %}
+        {% set parent_page = p.activeChild ? ' parent' : '' %}
+        {% set current_page = p.active ? ' active' : '' %}
+        <li class="dd-item{{ parent_page }}{{ current_page }}" data-nav-id="{{ p.route }}">
+            <a href="{{ p.url }}" {% if p.header.class %}class="{{ p.header.class }}"{% endif %}>
+                <span>{{ p.menu }}</span>
+            </a>
+            {% if p.children.count > 0 %}
+            <ul>
+                {{ _self.loop(p, parent_loop|default(0)+loop.index) }}
+            </ul>
+            {% endif %}
+        </li>
+    {% endfor %}
 {% endmacro %}
 
-<ul class="topics">
-  {% for p in taxonomy.findTaxonomy({'category':page.taxonomy.category}) %}
+{% macro version(p) %}
+    {% set parent_page = p.activeChild ? ' parent' : '' %}
+    {% set current_page = p.active ? ' active' : '' %}
+    <h5 class="{{ parent_page }}{{ current_page }}">
+        <a href="{{ p.url }}">{{ p.menu }}</a>
+    </h5>
+{% endmacro %}
 
-      {% if p.children.count > 0 %}
-        <li>
-          <p class="clearfix">{{ p.title }}</p>
-          <ul class="sub-topics">
-            {{ _self.loop(p) }}
-            <li class="clearfix">
-              {% for p in taxonomy.findTaxonomy({'category':page.taxonomy.tag}) %}
-                {{ p.title }}
-              {% endfor %}
-            </li>
+<div class="scrollbar-inner">
+  {% if theme_config.top_level_version %}
+      {% for slug, ver in pages.children %}
+          {{ _self.version(ver) }}
+          <ul id="{{ slug }}" class="topics">
+          {{ _self.loop(ver, '') }}
           </ul>
-        </li>
-      {% endif %}
-
-  {% endfor %}
-</ul>
+      {% endfor %}
+  {% else %}
+      <ul class="topics">
+          {% if theme_config.root_page %}
+              {{ _self.loop(page.find(theme_config.root_page), '') }}
+          {% else %}
+      {{ _self.loop(pages, '') }}
+          {% endif %}
+      </ul>
+  {% endif %}
+</div>

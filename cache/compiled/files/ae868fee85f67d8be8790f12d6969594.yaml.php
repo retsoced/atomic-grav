@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/deltaecho3/Development/grav-pattern-library-template/system/languages/it.yaml',
-    'modified' => 1526399966,
+    'modified' => 1529656344,
     'data' => [
         'FRONTMATTER_ERROR_PAGE' => '---Titolo: %1$s---# Errore: Frontmatter non valido: \'%2$s\' * *%3$s * * \' \'%4$s \' \'',
         'NICETIME' => [

@@ -2,13 +2,13 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/deltaecho3/Development/grav-pattern-library-template/system/config/site.yaml',
-    'modified' => 1526399966,
+    'modified' => 1529656344,
     'data' => [
         'title' => 'Grav',
         'default_lang' => 'en',
         'author' => [
             'name' => 'John Appleseed',
-            'email' => 'john@email.com'
+            'email' => 'john@example.com'
         ],
         'taxonomies' => [
             0 => 'category',

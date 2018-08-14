@@ -1,25 +1,25 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1529579560,
-    'checksum' => 'b360c1248ea6c075e6f29022b4aca146',
+    'timestamp' => 1529882154,
+    'checksum' => 'cf6300824be2473435ad06c2363bc4bc',
     'files' => [
         'system/blueprints/config' => [
             'media' => [
                 'file' => 'system/blueprints/config/media.yaml',
-                'modified' => 1526399966
+                'modified' => 1529656344
             ],
             'site' => [
                 'file' => 'system/blueprints/config/site.yaml',
-                'modified' => 1526399966
+                'modified' => 1529656344
             ],
             'streams' => [
                 'file' => 'system/blueprints/config/streams.yaml',
-                'modified' => 1526399966
+                'modified' => 1529656344
             ],
             'system' => [
                 'file' => 'system/blueprints/config/system.yaml',
-                'modified' => 1526399966
+                'modified' => 1529656344
             ]
         ],
         'user/plugins' => [
@@ -50,10 +50,6 @@ return [
             'plugins/shortcode-core' => [
                 'file' => 'user/plugins/shortcode-core/blueprints.yaml',
                 'modified' => 1529410521
-            ],
-            'plugins/codepen-embed' => [
-                'file' => 'user/plugins/codepen-embed/blueprints.yaml',
-                'modified' => 1529410523
             ],
             'plugins/seo' => [
                 'file' => 'user/plugins/seo/blueprints.yaml',
@@ -1319,6 +1315,9 @@ return [
                     -1 => 'PLUGIN_ADMIN.ERROR_SYSTEM',
                     0 => 'PLUGIN_ADMIN.ERROR_SIMPLE',
                     1 => 'PLUGIN_ADMIN.ERROR_FULL_BACKTRACE'
+                ],
+                'validate' => [
+                    'type' => 'int'
                 ],
                 'name' => 'system.errors.display',
                 'validation' => 'loose'
@@ -3116,34 +3115,6 @@ return [
                 'name' => 'plugins.shortcode-core.fontawesome.url',
                 'validation' => 'strict'
             ],
-            'plugins.codepen-embed' => [
-                'type' => '_root',
-                'form_field' => false,
-                'form' => [
-                    'validation' => 'strict'
-                ]
-            ],
-            'plugins.codepen-embed.enabled' => [
-                'type' => 'toggle',
-                'label' => 'Plugin status',
-                'highlight' => 1,
-                'default' => 0,
-                'options' => [
-                    1 => 'Enabled',
-                    0 => 'Disabled'
-                ],
-                'validate' => [
-                    'type' => 'bool'
-                ],
-                'name' => 'plugins.codepen-embed.enabled',
-                'validation' => 'strict'
-            ],
-            'plugins.codepen-embed.text_var' => [
-                'type' => 'text',
-                'label' => 'Text Variable',
-                'name' => 'plugins.codepen-embed.text_var',
-                'validation' => 'strict'
-            ],
             'plugins.seo' => [
                 'type' => '_root',
                 'form_field' => false,
@@ -4602,10 +4573,6 @@ return [
                         'load' => 'plugins.shortcode-core.fontawesome.load',
                         'url' => 'plugins.shortcode-core.fontawesome.url'
                     ]
-                ],
-                'codepen-embed' => [
-                    'enabled' => 'plugins.codepen-embed.enabled',
-                    'text_var' => 'plugins.codepen-embed.text_var'
                 ],
                 'seo' => [
                     'plugin_section' => 'plugins.seo.plugin_section',

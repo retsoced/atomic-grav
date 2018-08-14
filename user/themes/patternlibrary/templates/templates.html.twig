@@ -2,21 +2,23 @@
 {% extends 'partials/base.html.twig' %}
 {% set tags = page.taxonomy.tag %}
 
-{% block header%}
-  <header class="{{ page.taxonomy.category[0] }}">
-    {% if ( header.status == 'incomplete' ) %}
-      <div class="pattern-status incomplete">
-        {{ icons.faIcon('fas fa-exclamation-circle') }}<span>Pattern Incomplete</span>
-      </div>
-    {% else %}
-      <div class="pattern-status complete">
-        {{ icons.faIcon('fas fa-check-circle') }}<span>Pattern Complete</span>
-      </div>
-    {% endif %}
-    <h1 class="page-title">{% if header.title %}{{ header.title }} {% endif %}</h1>
-  </header>
-{% endblock%}
-
 {% block content %}
-    {% include 'partials/page.html.twig' %}
+	<div id="chapter">
+	<header class="{{ page.taxonomy.category[0] }}">
+		{% if ( header.status == 'incomplete' ) %}
+			<div class="pattern-status incomplete">
+				{{ icons.faIcon('fas fa-exclamation-circle') }}<span class="label">Pattern Incomplete</span>
+			</div>
+		{% else %}
+			<div class="pattern-status complete">
+				{{ icons.faIcon('fas fa-check-circle') }}<span class="label">Pattern Complete</span>
+			</div>
+		{% endif %}
+		<h1 class="page-title">{% if header.title %}{{ header.title }} {% endif %}</h1>
+	</header>
+
+		<div id="body-inner">
+			{{ page.content }}
+		</div>
+	</div>
 {% endblock %}

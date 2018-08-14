@@ -1,0 +1,34 @@
+{% macro loop(page) %}
+  {% for p in page.children %}
+    {% if p.visible %}
+      {% set current_page = (p.active or p.activeChild) ? 'active' : '' %}
+
+      {% if p.children.count < 0 %}
+        <li class="dd-item" data-nav-id="{{ p.route }}" data-link-url="{{p.url}}">
+          <a href="{{ p.url }}" title="{{ p.title }}">{{ p.title }}</a>
+          <!-- <span class="status-icon {{ p.header.status}}"></span> -->
+        </li>
+      {% endif %}
+    {% endif %}
+  {% endfor %}
+{% endmacro %}
+
+<ul class="topics">
+  {% for p in taxonomy.findTaxonomy({'category':page.taxonomy.category}) %}
+
+      {% if p.children.count > 0 %}
+        <li>
+          <p class="clearfix">{{ p.title }}</p>
+          <ul class="sub-topics">
+            {{ _self.loop(p) }}
+            <li class="clearfix">
+              {% for p in taxonomy.findTaxonomy({'category':page.taxonomy.tag}) %}
+                {{ p.title }}
+              {% endfor %}
+            </li>
+          </ul>
+        </li>
+      {% endif %}
+
+  {% endfor %}
+</ul>

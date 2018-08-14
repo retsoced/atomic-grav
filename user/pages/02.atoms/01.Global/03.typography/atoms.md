@@ -1,10 +1,33 @@
 ---
 title: Typography
 taxonomy:
-    category: [atoms, patterns]
+    category:
+        - patterns
+        - atoms
+twittercardoptions: summary
+articleenabled: false
+musiceventenabled: false
+orgaenabled: false
+orga:
+    ratingValue: 2.5
+orgaratingenabled: false
+eventenabled: false
+personenabled: false
+restaurantenabled: false
+restaurant:
+    acceptsReservations: 'yes'
+    priceRange: $
 ---
 
 ## Headings & titles
+
+<h1 class="page-title">The quick brown fox jumps over the fence.</h1>
+<h2 class="sub-title">This is a subtitle or just an h2 tag</h2>
+<h3>h3 heading tag text goes here</h3>
+<h4>h4 heading tag text goes here</h4>
+<h5>h5 heading tag text goes here</h5>
+<h6>h6 heading tag text goes here</h6>
+
 ```
 <h1 class="page-title">The quick brown fox jumps over the fence.</h1>
 <h2 class="sub-title">This is a subtitle or just an h2 tag</h2>

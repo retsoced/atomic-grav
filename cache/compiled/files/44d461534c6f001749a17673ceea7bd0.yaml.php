@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/deltaecho3/Development/grav-pattern-library-template/system/blueprints/config/system.yaml',
-    'modified' => 1526399966,
+    'modified' => 1529656344,
     'data' => [
         'title' => 'PLUGIN_ADMIN.SYSTEM',
         'form' => [
@@ -967,6 +967,9 @@ return [
                                 -1 => 'PLUGIN_ADMIN.ERROR_SYSTEM',
                                 0 => 'PLUGIN_ADMIN.ERROR_SIMPLE',
                                 1 => 'PLUGIN_ADMIN.ERROR_FULL_BACKTRACE'
+                            ],
+                            'validate' => [
+                                'type' => 'int'
                             ]
                         ],
                         'errors.log' => [
