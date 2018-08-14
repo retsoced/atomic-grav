@@ -31319,12 +31319,23 @@
 		"oAP": "\/user\/themes\/patternlibrary\/languages.yaml",
 		"oF": 0
 		},
-	"\/user\/themes\/patternlibrary\/LICENSE": {
+	"\/user\/themes\/patternlibrary\/LICENSE.md": {
 		"cB": 0,
-		"ft": 8192,
-		"oA": 0,
-		"oAP": "\/user\/themes\/patternlibrary\/LICENSE",
-		"oF": 0
+		"cS": 0,
+		"eF": 1,
+		"eL": 1,
+		"ema": 1,
+		"eSQ": 1,
+		"ft": 4096,
+		"oA": 1,
+		"oAP": "\/user\/themes\/patternlibrary\/LICENSE.html",
+		"oF": 0,
+		"oFM": 0,
+		"oS": 0,
+		"pHT": 0,
+		"pME": 1,
+		"rFN": 0,
+		"uCM": 0
 		},
 	"\/user\/themes\/patternlibrary\/patternlibrary.php": {
 		"cB": 0,
@@ -31366,7 +31377,7 @@
 		"oAP": "\/user\/themes\/patternlibrary\/screenshot.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/user\/themes\/patternlibrary\/scss.sh": {
@@ -31801,7 +31812,7 @@
 		"oAP": "\/user\/themes\/patternlibrary\/thumbnail.jpg",
 		"oF": 0,
 		"oIPL": 0,
-		"opt": 0,
+		"opt": 1,
 		"q": 100
 		},
 	"\/vendor\/antoligy\/dom-string-iterators\/README.md": {
