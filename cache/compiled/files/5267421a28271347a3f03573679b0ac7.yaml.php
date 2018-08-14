@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/deltaecho3/Development/grav-pattern-library-template/user/plugins/login/blueprints.yaml',
-    'modified' => 1527054839,
+    'modified' => 1529408319,
     'data' => [
         'name' => 'Login',
-        'version' => '2.7.0',
+        'version' => '2.7.2',
         'description' => 'Enables user authentication and login screen.',
         'icon' => 'sign-in',
         'author' => [

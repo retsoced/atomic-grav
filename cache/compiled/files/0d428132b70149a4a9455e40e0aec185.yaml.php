@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/deltaecho3/Development/grav-pattern-library-template/user/plugins/form/blueprints.yaml',
-    'modified' => 1527054837,
+    'modified' => 1529408318,
     'data' => [
         'name' => 'Form',
-        'version' => '2.14.1',
+        'version' => '2.15.0',
         'description' => 'Enables the forms handling',
         'icon' => 'check-square',
         'author' => [
@@ -20,7 +20,7 @@ return [
         'dependencies' => [
             0 => [
                 'name' => 'grav',
-                'version' => '>=1.3.9'
+                'version' => '>=1.4.5'
             ]
         ],
         'form' => [

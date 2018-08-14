@@ -19,17 +19,17 @@ $sidebar-color: $grain;
 // navigation
 $topbar-color: $prussian;
 $nav-link: #ffae1a;
-$nav-hover: darken($nav-link, 30%);
+$nav-hover: lighten($nav-link, 30%);
 $sidebar-link: #233237;
 $sidebar-hover: #984b43;
-$breadcrumb-link: #eac67a;
-$breadcrumb-hover: #f7f7f7;
+$breadcrumb-link: #4caf50;
+$breadcrumb-hover: #0000ff;
 
 // body colors
 $body-color: rgba(150,150,150,0.1);
 $body-text-color: #222;
-$body-link: #008f95;
-$body-hover: #94618e;
+$body-link: #4CAF50;
+$body-hover: #0000ff;
 $title-color: $oxblood;
 $subtitle-color: #000;
 

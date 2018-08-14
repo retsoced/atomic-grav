@@ -1,31 +1,32 @@
 {% macro loop(page, parent_loop) %}
-    {% if parent_loop|length > 0 %}
-        {% set data_level = parent_loop %}
-    {% else %}
-        {% set data_level = 0 %}
-    {% endif %}
-    {% for p in page.children.visible %}
-        {% set parent_page = p.activeChild ? ' parent' : '' %}
-        {% set current_page = p.active ? ' active' : '' %}
-        <li class="nav-item" data-nav-id="{{ p.route }}">
-            <a href="{{ p.url }}" target="_self">{{ p.menu }}</a>
-        </li>
-    {% endfor %}
+  {% if parent_loop|length > 0 %}
+      {% set data_level = parent_loop %}
+  {% else %}
+      {% set data_level = 0 %}
+  {% endif %}
+  
+  {% for p in page.children.visible %}
+      {% set parent_page = p.activeChild ? ' parent' : '' %}
+      {% set current_page = p.active ? ' active' : '' %}
+      <li class="nav-item" data-nav-id="{{ p.route }}">
+          <a href="{{ p.url }}" target="_self">{{ p.menu }}</a>
+      </li>
+  {% endfor %}
 {% endmacro %}
 
-        {% if theme_config.top_level_version %}
-            {% for slug, ver in pages.children %}
-                {{ _self.version(ver) }}
-                <ul>
-                {{ _self.loop(ver, '') }}
-                </ul>
-            {% endfor %}
-        {% else %}
-            <ul class="navbar">
-                {% if theme_config.root_page %}
-                    {{ _self.loop(page.find(theme_config.root_page), '') }}
-                {% else %}
-            {{ _self.loop(pages, '') }}
-                {% endif %}
-            </ul>
-        {% endif %}
+{% if theme_config.top_level_version %}
+  {% for slug, ver in pages.children %}
+      {{ _self.version(ver) }}
+      <ul>
+      {{ _self.loop(ver, '') }}
+      </ul>
+  {% endfor %}
+{% else %}
+  <ul class="navbar">
+      {% if theme_config.root_page %}
+          {{ _self.loop(page.find(theme_config.root_page), '') }}
+      {% else %}
+  {{ _self.loop(pages, '') }}
+      {% endif %}
+  </ul>
+{% endif %}

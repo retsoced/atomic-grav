@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/deltaecho3/Development/grav-pattern-library-template/user/plugins/form/languages.yaml',
-    'modified' => 1527054837,
+    'modified' => 1529408318,
     'data' => [
         'en' => [
             'PLUGIN_FORM' => [

@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/deltaecho3/Development/grav-pattern-library-template/user/config/system.yaml',
-    'modified' => 1529314454,
+    'modified' => 1529882146,
     'data' => [
         'absolute_urls' => false,
         'param_sep' => ':',
@@ -22,7 +22,7 @@ return [
             'override_locale' => false
         ],
         'home' => [
-            'alias' => '/atoms',
+            'alias' => '/home',
             'hide_in_urls' => false
         ],
         'pages' => [

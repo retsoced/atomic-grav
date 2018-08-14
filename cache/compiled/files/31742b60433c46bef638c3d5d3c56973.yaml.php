@@ -2,7 +2,7 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/deltaecho3/Development/grav-pattern-library-template/user/plugins/admin/blueprints/admin/pages/new_folder.yaml',
-    'modified' => 1527294247,
+    'modified' => 1529408316,
     'data' => [
         'rules' => [
             'slug' => [

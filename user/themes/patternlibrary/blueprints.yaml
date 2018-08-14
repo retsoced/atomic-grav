@@ -6,10 +6,10 @@ author:
   name: Darryll DeCoster
   email: darryll@decoster.design
   url: http://decoster.design
-homepage: https://github.com/getgrav/grav-theme-learn2
-demo: http://learn.getgrav.org
-keywords: heme, docs, modern, fast, responsive, html5, css3
-bugs: https://github.com/getgrav/grav-theme-learn2/issues
+homepage: https://github.com/getgrav/atomic-grav
+demo: http://pattern-library.decoster.design
+keywords: design, patterns, atomic, web, interactions, development, library
+bugs: https://github.com/retsoced/atomic-grav/issues
 license: MIT
 
 form:
@@ -29,7 +29,7 @@ form:
     home_url:
         type: text
         label: Home URL
-        placeholder: http://decoster.design
+        placeholder: http://pattern-library.decoster.design
         validate:
           type: text
 
@@ -39,23 +39,3 @@ form:
         placeholder: UA-XXXXXXXX-X
         validate:
           type: text
-
-    github.position:
-        type: select
-        size: medium
-        classes: fancy
-        label: GitHub Position
-        options:
-            top: Top
-            bottom: Bottom
-            off: Off
-
-    github.tree:
-        type: text
-        label: GitHub Tree
-        default: https://github.com/getgrav/grav-skeleton-rtfm-site/blob/develop/
-
-    github.commits:
-        type: text
-        label: GitHub Commits
-        default: https://github.com/getgrav/grav-skeleton-rtfm-site/commits/develop/

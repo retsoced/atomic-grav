@@ -1,25 +1,25 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledBlueprints',
-    'timestamp' => 1529314463,
-    'checksum' => '52864315e80db534f7372bea93c0be89',
+    'timestamp' => 1529882154,
+    'checksum' => 'cf6300824be2473435ad06c2363bc4bc',
     'files' => [
         'system/blueprints/config' => [
             'media' => [
                 'file' => 'system/blueprints/config/media.yaml',
-                'modified' => 1526399966
+                'modified' => 1529656344
             ],
             'site' => [
                 'file' => 'system/blueprints/config/site.yaml',
-                'modified' => 1526399966
+                'modified' => 1529656344
             ],
             'streams' => [
                 'file' => 'system/blueprints/config/streams.yaml',
-                'modified' => 1526399966
+                'modified' => 1529656344
             ],
             'system' => [
                 'file' => 'system/blueprints/config/system.yaml',
-                'modified' => 1526399966
+                'modified' => 1529656344
             ]
         ],
         'user/plugins' => [
@@ -29,7 +29,7 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/blueprints.yaml',
-                'modified' => 1527054837
+                'modified' => 1529408318
             ],
             'plugins/highlight' => [
                 'file' => 'user/plugins/highlight/blueprints.yaml',
@@ -41,11 +41,19 @@ return [
             ],
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/blueprints.yaml',
-                'modified' => 1527294247
+                'modified' => 1529408316
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/blueprints.yaml',
                 'modified' => 1526399970
+            ],
+            'plugins/shortcode-core' => [
+                'file' => 'user/plugins/shortcode-core/blueprints.yaml',
+                'modified' => 1529410521
+            ],
+            'plugins/seo' => [
+                'file' => 'user/plugins/seo/blueprints.yaml',
+                'modified' => 1529408320
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/blueprints.yaml',
@@ -57,11 +65,15 @@ return [
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/blueprints.yaml',
-                'modified' => 1527054839
+                'modified' => 1529408319
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/blueprints.yaml',
                 'modified' => 1527054841
+            ],
+            'plugins/featherlight' => [
+                'file' => 'user/plugins/featherlight/blueprints.yaml',
+                'modified' => 1529408354
             ]
         ]
     ],
@@ -1303,6 +1315,9 @@ return [
                     -1 => 'PLUGIN_ADMIN.ERROR_SYSTEM',
                     0 => 'PLUGIN_ADMIN.ERROR_SIMPLE',
                     1 => 'PLUGIN_ADMIN.ERROR_FULL_BACKTRACE'
+                ],
+                'validate' => [
+                    'type' => 'int'
                 ],
                 'name' => 'system.errors.display',
                 'validation' => 'loose'
@@ -3001,6 +3016,310 @@ return [
                 'name' => 'plugins.problems.built_in_css',
                 'validation' => 'strict'
             ],
+            'plugins.shortcode-core' => [
+                'type' => '_root',
+                'form_field' => false,
+                'form' => [
+                    'validation' => 'strict'
+                ]
+            ],
+            'plugins.shortcode-core.enabled' => [
+                'type' => 'toggle',
+                'label' => 'Plugin Enabled',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.shortcode-core.enabled',
+                'validation' => 'strict'
+            ],
+            'plugins.shortcode-core.active' => [
+                'type' => 'toggle',
+                'label' => 'Activated',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.shortcode-core.active',
+                'validation' => 'strict'
+            ],
+            'plugins.shortcode-core.active_admin' => [
+                'type' => 'toggle',
+                'label' => 'Activated in admin',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.shortcode-core.active_admin',
+                'validation' => 'strict'
+            ],
+            'plugins.shortcode-core.parser' => [
+                'type' => 'select',
+                'size' => 'medium',
+                'classes' => 'fancy',
+                'label' => 'Processor',
+                'options' => [
+                    'wordpress' => 'WordpressParser',
+                    'regex' => 'RegexParser',
+                    'regular' => 'RegularParser'
+                ],
+                'name' => 'plugins.shortcode-core.parser',
+                'validation' => 'strict'
+            ],
+            'plugins.shortcode-core.custom_shortcodes' => [
+                'type' => 'text',
+                'label' => 'Custom Shortcodes',
+                'size' => 'large',
+                'name' => 'plugins.shortcode-core.custom_shortcodes',
+                'validation' => 'strict'
+            ],
+            'plugins.shortcode-core.fontawesome' => [
+                'type' => '_parent',
+                'name' => 'plugins.shortcode-core.fontawesome',
+                'form_field' => false
+            ],
+            'plugins.shortcode-core.fontawesome.load' => [
+                'type' => 'toggle',
+                'label' => 'Load Fontawesome Library',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'Enabled',
+                    0 => 'Disabled'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.shortcode-core.fontawesome.load',
+                'validation' => 'strict'
+            ],
+            'plugins.shortcode-core.fontawesome.url' => [
+                'type' => 'text',
+                'label' => 'Fontawesome URL',
+                'size' => 'large',
+                'name' => 'plugins.shortcode-core.fontawesome.url',
+                'validation' => 'strict'
+            ],
+            'plugins.seo' => [
+                'type' => '_root',
+                'form_field' => false,
+                'form' => [
+                    'validation' => 'strict'
+                ]
+            ],
+            'plugins.seo.plugin_section' => [
+                'type' => 'section',
+                'underline' => true,
+                'name' => 'plugins.seo.plugin_section',
+                'validation' => 'strict'
+            ],
+            'plugins.seo.enabled' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_ADMIN.PLUGIN_STATUS',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.seo.enabled',
+                'validation' => 'strict'
+            ],
+            'plugins.seo.facebookid' => [
+                'type' => 'text',
+                'label' => 'Facebook App ID',
+                'name' => 'plugins.seo.facebookid',
+                'validation' => 'strict'
+            ],
+            'plugins.seo.twitterid' => [
+                'type' => 'text',
+                'label' => 'Twitter ID',
+                'name' => 'plugins.seo.twitterid',
+                'validation' => 'strict'
+            ],
+            'plugins.seo.twitter_default' => [
+                'type' => 'toggle',
+                'label' => 'On page creation, enable twitter metadata?',
+                'default' => 1,
+                'highlight' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'name' => 'plugins.seo.twitter_default',
+                'validation' => 'strict'
+            ],
+            'plugins.seo.facebook_default' => [
+                'type' => 'toggle',
+                'label' => 'On page creation, enable facebook metadata?',
+                'default' => 1,
+                'highlight' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'name' => 'plugins.seo.facebook_default',
+                'validation' => 'strict'
+            ],
+            'plugins.seo.microdata_section' => [
+                'type' => 'section',
+                'underline' => true,
+                'name' => 'plugins.seo.microdata_section',
+                'validation' => 'strict'
+            ],
+            'plugins.seo.article' => [
+                'type' => 'toggle',
+                'label' => 'Enable Article Microdata',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.seo.article',
+                'validation' => 'strict'
+            ],
+            'plugins.seo.event' => [
+                'type' => 'toggle',
+                'label' => 'Enable Event Microdata',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.seo.event',
+                'validation' => 'strict'
+            ],
+            'plugins.seo.restaurant' => [
+                'type' => 'toggle',
+                'label' => 'Enable Restaurant Microdata',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.seo.restaurant',
+                'validation' => 'strict'
+            ],
+            'plugins.seo.musicevent' => [
+                'type' => 'toggle',
+                'label' => 'Enable Music Event Microdata',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.seo.musicevent',
+                'validation' => 'strict'
+            ],
+            'plugins.seo.mdcolumn1' => [
+                'type' => 'column',
+                'name' => 'plugins.seo.mdcolumn1',
+                'validation' => 'strict'
+            ],
+            'plugins.seo.person' => [
+                'type' => 'toggle',
+                'label' => 'Enable Person Microdata',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.seo.person',
+                'validation' => 'strict'
+            ],
+            'plugins.seo.organization' => [
+                'type' => 'toggle',
+                'label' => 'Enable Organization Microdata',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.seo.organization',
+                'validation' => 'strict'
+            ],
+            'plugins.seo.musicalbum' => [
+                'type' => 'toggle',
+                'label' => 'Enable Music Album Microdata',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.seo.musicalbum',
+                'validation' => 'strict'
+            ],
+            'plugins.seo.product' => [
+                'type' => 'toggle',
+                'label' => 'Enable Product Microdata',
+                'highlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.seo.product',
+                'validation' => 'strict'
+            ],
+            'plugins.seo.mdcolumn2' => [
+                'type' => 'column',
+                'name' => 'plugins.seo.mdcolumn2',
+                'validation' => 'strict'
+            ],
+            'plugins.seo.md_columns' => [
+                'type' => 'columns',
+                'name' => 'plugins.seo.md_columns',
+                'validation' => 'strict'
+            ],
             'plugins.error' => [
                 'type' => '_root',
                 'form_field' => false,
@@ -3796,6 +4115,133 @@ return [
                 ],
                 'name' => 'plugins.email.debug',
                 'validation' => 'loose'
+            ],
+            'plugins.featherlight' => [
+                'type' => '_root',
+                'form_field' => false,
+                'form' => [
+                    'validation' => 'strict'
+                ]
+            ],
+            'plugins.featherlight.enabled' => [
+                'type' => 'toggle',
+                'label' => 'PLUGIN_ADMIN.PLUGIN_STATUS',
+                'hightlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.featherlight.enabled',
+                'validation' => 'strict'
+            ],
+            'plugins.featherlight.active' => [
+                'type' => 'toggle',
+                'label' => 'Active',
+                'hightlight' => 1,
+                'default' => 1,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.featherlight.active',
+                'validation' => 'strict'
+            ],
+            'plugins.featherlight.requirejs' => [
+                'type' => 'toggle',
+                'label' => 'RequireJS',
+                'hightlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.featherlight.requirejs',
+                'validation' => 'strict'
+            ],
+            'plugins.featherlight.gallery' => [
+                'type' => 'toggle',
+                'label' => 'Gallery',
+                'hightlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.featherlight.gallery',
+                'validation' => 'strict'
+            ],
+            'plugins.featherlight.openSpeed' => [
+                'type' => 'text',
+                'size' => 'medium',
+                'label' => 'Open Speed',
+                'default' => '250',
+                'name' => 'plugins.featherlight.openSpeed',
+                'validation' => 'strict'
+            ],
+            'plugins.featherlight.closeSpeed' => [
+                'type' => 'text',
+                'size' => 'medium',
+                'label' => 'Close Speed',
+                'default' => '250',
+                'name' => 'plugins.featherlight.closeSpeed',
+                'validation' => 'strict'
+            ],
+            'plugins.featherlight.closeOnClick' => [
+                'type' => 'select',
+                'size' => 'medium',
+                'classes' => 'fancy',
+                'label' => 'Close on Click',
+                'options' => [
+                    'background' => 'background',
+                    'anywhere' => 'anywhere',
+                    'false' => 'false'
+                ],
+                'name' => 'plugins.featherlight.closeOnClick',
+                'validation' => 'strict'
+            ],
+            'plugins.featherlight.closeOnEsc' => [
+                'type' => 'toggle',
+                'label' => 'Close on Esc',
+                'hightlight' => 1,
+                'default' => 0,
+                'options' => [
+                    1 => 'PLUGIN_ADMIN.ENABLED',
+                    0 => 'PLUGIN_ADMIN.DISABLED'
+                ],
+                'validate' => [
+                    'type' => 'bool'
+                ],
+                'name' => 'plugins.featherlight.closeOnEsc',
+                'validation' => 'strict'
+            ],
+            'plugins.featherlight.root' => [
+                'type' => 'text',
+                'size' => 'medium',
+                'label' => 'Root',
+                'default' => 'body',
+                'name' => 'plugins.featherlight.root',
+                'validation' => 'strict'
+            ],
+            'plugins.featherlight.initTemplate' => [
+                'type' => 'text',
+                'size' => 'medium',
+                'label' => 'Init script',
+                'default' => 'plugin://featherlight/js/featherlight.init.js',
+                'name' => 'plugins.featherlight.initTemplate',
+                'validation' => 'strict'
             ]
         ],
         'rules' => [
@@ -4117,6 +4563,37 @@ return [
                     'enabled' => 'plugins.problems.enabled',
                     'built_in_css' => 'plugins.problems.built_in_css'
                 ],
+                'shortcode-core' => [
+                    'enabled' => 'plugins.shortcode-core.enabled',
+                    'active' => 'plugins.shortcode-core.active',
+                    'active_admin' => 'plugins.shortcode-core.active_admin',
+                    'parser' => 'plugins.shortcode-core.parser',
+                    'custom_shortcodes' => 'plugins.shortcode-core.custom_shortcodes',
+                    'fontawesome' => [
+                        'load' => 'plugins.shortcode-core.fontawesome.load',
+                        'url' => 'plugins.shortcode-core.fontawesome.url'
+                    ]
+                ],
+                'seo' => [
+                    'plugin_section' => 'plugins.seo.plugin_section',
+                    'enabled' => 'plugins.seo.enabled',
+                    'facebookid' => 'plugins.seo.facebookid',
+                    'twitterid' => 'plugins.seo.twitterid',
+                    'twitter_default' => 'plugins.seo.twitter_default',
+                    'facebook_default' => 'plugins.seo.facebook_default',
+                    'microdata_section' => 'plugins.seo.microdata_section',
+                    'md_columns' => 'plugins.seo.md_columns',
+                    'mdcolumn1' => 'plugins.seo.mdcolumn1',
+                    'article' => 'plugins.seo.article',
+                    'event' => 'plugins.seo.event',
+                    'restaurant' => 'plugins.seo.restaurant',
+                    'musicevent' => 'plugins.seo.musicevent',
+                    'mdcolumn2' => 'plugins.seo.mdcolumn2',
+                    'person' => 'plugins.seo.person',
+                    'organization' => 'plugins.seo.organization',
+                    'musicalbum' => 'plugins.seo.musicalbum',
+                    'product' => 'plugins.seo.product'
+                ],
                 'error' => [
                     'enabled' => 'plugins.error.enabled',
                     'routes' => [
@@ -4212,6 +4689,18 @@ return [
                     'reply_to_name' => 'plugins.email.reply_to_name',
                     'body' => 'plugins.email.body',
                     'debug' => 'plugins.email.debug'
+                ],
+                'featherlight' => [
+                    'enabled' => 'plugins.featherlight.enabled',
+                    'active' => 'plugins.featherlight.active',
+                    'requirejs' => 'plugins.featherlight.requirejs',
+                    'gallery' => 'plugins.featherlight.gallery',
+                    'openSpeed' => 'plugins.featherlight.openSpeed',
+                    'closeSpeed' => 'plugins.featherlight.closeSpeed',
+                    'closeOnClick' => 'plugins.featherlight.closeOnClick',
+                    'closeOnEsc' => 'plugins.featherlight.closeOnEsc',
+                    'root' => 'plugins.featherlight.root',
+                    'initTemplate' => 'plugins.featherlight.initTemplate'
                 ]
             ]
         ],

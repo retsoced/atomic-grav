@@ -1,9 +1,23 @@
-{% extends 'docs.html.twig' %}
+{% import 'macros/font-awesome.html.twig' as icons %}
+{% extends 'general.html.twig' %}
 
 {% block content %}
 	<div id="chapter">
-    	<div id="body-inner">
+	<header class="{{ page.taxonomy.category[0] }}">
+		{% if ( header.status == 'incomplete' ) %}
+			<div class="pattern-status incomplete">
+				{{ icons.faIcon('fas fa-exclamation-circle') }}<span class="label">Pattern Incomplete</span>
+			</div>
+		{% else %}
+			<div class="pattern-status complete">
+				{{ icons.faIcon('fas fa-check-circle') }}<span class="label">Pattern Complete</span>
+			</div>
+		{% endif %}
+		<h1 class="page-title">{% if header.title %}{{ header.title }} {% endif %}</h1>
+	</header>
+
+		<div id="body-inner">
 			{{ page.content }}
 		</div>
-    </div>
+	</div>
 {% endblock %}

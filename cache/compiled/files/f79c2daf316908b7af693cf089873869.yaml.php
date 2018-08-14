@@ -2,10 +2,10 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/deltaecho3/Development/grav-pattern-library-template/user/plugins/admin/blueprints.yaml',
-    'modified' => 1527294247,
+    'modified' => 1529408316,
     'data' => [
         'name' => 'Admin Panel',
-        'version' => '1.8.2',
+        'version' => '1.8.4',
         'description' => 'Adds an advanced administration panel to manage your site',
         'icon' => 'empire',
         'author' => [

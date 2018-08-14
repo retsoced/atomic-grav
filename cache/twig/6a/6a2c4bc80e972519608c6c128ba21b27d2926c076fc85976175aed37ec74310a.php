@@ -15,68 +15,64 @@ class __TwigTemplate_8d5a51f631e92c61d8c539abc80c31adc074ad02e93fee6cae16b696eec
 
     protected function doDisplay(array $context, array $blocks = array())
     {
-        // line 24
+        // line 22
         echo "
 ";
-        // line 33
+        // line 30
         echo "
-";
-        // line 34
+<div class=\"scrollbar-inner\">
+  ";
+        // line 32
         if ($this->getAttribute(($context["theme_config"] ?? null), "top_level_version", array())) {
-            // line 35
-            echo "  ";
+            // line 33
+            echo "      ";
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable($this->getAttribute(($context["pages"] ?? null), "children", array()));
             foreach ($context['_seq'] as $context["slug"] => $context["ver"]) {
-                // line 36
-                echo "    ";
+                // line 34
+                echo "          ";
                 echo $this->getAttribute($this, "version", array(0 => $context["ver"]), "method");
                 echo "
-      <ul id=\"";
-                // line 37
+          <ul id=\"";
+                // line 35
                 echo $context["slug"];
                 echo "\" class=\"topics\">
-        ";
-                // line 38
+          ";
+                // line 36
                 echo $this->getAttribute($this, "loop", array(0 => $context["ver"], 1 => ""), "method");
                 echo "
-      </ul>
-  ";
+          </ul>
+      ";
             }
             $_parent = $context['_parent'];
             unset($context['_seq'], $context['_iterated'], $context['slug'], $context['ver'], $context['_parent'], $context['loop']);
             $context = array_intersect_key($context, $_parent) + $_parent;
+            // line 39
+            echo "  ";
         } else {
-            // line 42
-            echo "  <ul class=\"topics\">
-    ";
-            // line 43
+            // line 40
+            echo "      <ul class=\"topics\">
+          ";
+            // line 41
             if ($this->getAttribute(($context["theme_config"] ?? null), "root_page", array())) {
-                // line 44
-                echo "      ";
+                // line 42
+                echo "              ";
                 echo $this->getAttribute($this, "loop", array(0 => $this->getAttribute(($context["page"] ?? null), "find", array(0 => $this->getAttribute(($context["theme_config"] ?? null), "root_page", array())), "method"), 1 => ""), "method");
                 echo "
-    ";
+          ";
             } else {
-                // line 46
+                // line 44
                 echo "      ";
                 echo $this->getAttribute($this, "loop", array(0 => ($context["pages"] ?? null), 1 => ""), "method");
                 echo "
-    ";
+          ";
             }
-            // line 48
-            echo "  </ul>
-";
+            // line 46
+            echo "      </ul>
+  ";
         }
-        // line 50
-        echo "<hr />
-
-<footer>
-  <p>";
-        // line 53
-        echo $this->env->getExtension('Grav\Common\Twig\TwigExtension')->translate("THEME_LEARN2_BUILT_WITH_GRAV");
-        echo "</p>
-</footer>
+        // line 48
+        echo "</div>
 ";
     }
 
@@ -94,24 +90,22 @@ class __TwigTemplate_8d5a51f631e92c61d8c539abc80c31adc074ad02e93fee6cae16b696eec
         ob_start();
         try {
             // line 2
-            echo "  ";
+            echo "    ";
             if ((twig_length_filter($this->env, ($context["parent_loop"] ?? null)) > 0)) {
                 // line 3
-                echo "    ";
+                echo "        ";
                 $context["data_level"] = ($context["parent_loop"] ?? null);
                 // line 4
-                echo "  ";
+                echo "    ";
             } else {
                 // line 5
-                echo "    ";
+                echo "        ";
                 $context["data_level"] = 0;
                 // line 6
-                echo "  ";
+                echo "    ";
             }
             // line 7
-            echo "
-  ";
-            // line 8
+            echo "    ";
             $context['_parent'] = $context;
             $context['_seq'] = twig_ensure_traversable($this->getAttribute($this->getAttribute(($context["page"] ?? null), "children", array()), "visible", array()));
             $context['loop'] = array(
@@ -128,21 +122,21 @@ class __TwigTemplate_8d5a51f631e92c61d8c539abc80c31adc074ad02e93fee6cae16b696eec
                 $context['loop']['last'] = 1 === $length;
             }
             foreach ($context['_seq'] as $context["_key"] => $context["p"]) {
-                // line 9
-                echo "    ";
+                // line 8
+                echo "        ";
                 $context["parent_page"] = (($this->getAttribute($context["p"], "activeChild", array())) ? (" parent") : (""));
-                // line 10
-                echo "    ";
+                // line 9
+                echo "        ";
                 $context["current_page"] = (($this->getAttribute($context["p"], "active", array())) ? (" active") : (""));
-                // line 11
-                echo "    <li class=\"dd-item";
+                // line 10
+                echo "        <li class=\"dd-item";
                 echo ($context["parent_page"] ?? null);
                 echo ($context["current_page"] ?? null);
                 echo "\" data-nav-id=\"";
                 echo $this->getAttribute($context["p"], "route", array());
                 echo "\">
-      <a href=\"";
-                // line 12
+            <a href=\"";
+                // line 11
                 echo $this->getAttribute($context["p"], "url", array());
                 echo "\" ";
                 if ($this->getAttribute($this->getAttribute($context["p"], "header", array()), "class", array())) {
@@ -151,27 +145,26 @@ class __TwigTemplate_8d5a51f631e92c61d8c539abc80c31adc074ad02e93fee6cae16b696eec
                     echo "\"";
                 }
                 echo ">
-        <span>";
-                // line 13
+                <span>";
+                // line 12
                 echo $this->getAttribute($context["p"], "menu", array());
                 echo "</span>
-      </a>
-
-      ";
-                // line 16
+            </a>
+            ";
+                // line 14
                 if (($this->getAttribute($this->getAttribute($context["p"], "children", array()), "count", array()) > 0)) {
-                    // line 17
-                    echo "        <ul>
-          ";
-                    // line 18
+                    // line 15
+                    echo "            <ul>
+                ";
+                    // line 16
                     echo $this->getAttribute($this, "loop", array(0 => $context["p"], 1 => (((array_key_exists("parent_loop", $context)) ? (_twig_default_filter(($context["parent_loop"] ?? null), 0)) : (0)) + $this->getAttribute($context["loop"], "index", array()))), "method");
                     echo "
-        </ul>
-      ";
+            </ul>
+            ";
                 }
-                // line 21
-                echo "    </li>
-  ";
+                // line 19
+                echo "        </li>
+    ";
                 ++$context['loop']['index0'];
                 ++$context['loop']['index'];
                 $context['loop']['first'] = false;
@@ -197,7 +190,7 @@ class __TwigTemplate_8d5a51f631e92c61d8c539abc80c31adc074ad02e93fee6cae16b696eec
         return ('' === $tmp = ob_get_clean()) ? '' : new Twig_Markup($tmp, $this->env->getCharset());
     }
 
-    // line 25
+    // line 23
     public function getversion($__p__ = null, ...$__varargs__)
     {
         $context = $this->env->mergeGlobals(array(
@@ -209,26 +202,24 @@ class __TwigTemplate_8d5a51f631e92c61d8c539abc80c31adc074ad02e93fee6cae16b696eec
 
         ob_start();
         try {
-            // line 26
-            echo "  ";
+            // line 24
+            echo "    ";
             $context["parent_page"] = (($this->getAttribute(($context["p"] ?? null), "activeChild", array())) ? (" parent") : (""));
-            // line 27
-            echo "  ";
+            // line 25
+            echo "    ";
             $context["current_page"] = (($this->getAttribute(($context["p"] ?? null), "active", array())) ? (" active") : (""));
-            // line 28
-            echo "  
-  <h5 class=\"";
-            // line 29
+            // line 26
+            echo "    <h5 class=\"";
             echo ($context["parent_page"] ?? null);
             echo ($context["current_page"] ?? null);
             echo "\">
-    <a href=\"";
-            // line 30
+        <a href=\"";
+            // line 27
             echo $this->getAttribute(($context["p"] ?? null), "url", array());
             echo "\">";
             echo $this->getAttribute(($context["p"] ?? null), "menu", array());
             echo "</a>
-  </h5>
+    </h5>
 ";
         } catch (Exception $e) {
             ob_end_clean();
@@ -255,7 +246,7 @@ class __TwigTemplate_8d5a51f631e92c61d8c539abc80c31adc074ad02e93fee6cae16b696eec
 
     public function getDebugInfo()
     {
-        return array (  227 => 30,  222 => 29,  219 => 28,  216 => 27,  213 => 26,  201 => 25,  173 => 21,  167 => 18,  164 => 17,  162 => 16,  156 => 13,  146 => 12,  138 => 11,  135 => 10,  132 => 9,  115 => 8,  112 => 7,  109 => 6,  106 => 5,  103 => 4,  100 => 3,  97 => 2,  84 => 1,  77 => 53,  72 => 50,  68 => 48,  62 => 46,  56 => 44,  54 => 43,  51 => 42,  41 => 38,  37 => 37,  32 => 36,  27 => 35,  25 => 34,  22 => 33,  19 => 24,);
+        return array (  218 => 27,  212 => 26,  209 => 25,  206 => 24,  194 => 23,  166 => 19,  160 => 16,  157 => 15,  155 => 14,  150 => 12,  140 => 11,  132 => 10,  129 => 9,  126 => 8,  108 => 7,  105 => 6,  102 => 5,  99 => 4,  96 => 3,  93 => 2,  80 => 1,  75 => 48,  71 => 46,  65 => 44,  59 => 42,  57 => 41,  54 => 40,  51 => 39,  42 => 36,  38 => 35,  33 => 34,  28 => 33,  26 => 32,  22 => 30,  19 => 22,);
     }
 
     /** @deprecated since 1.27 (to be removed in 2.0). Use getSourceContext() instead */

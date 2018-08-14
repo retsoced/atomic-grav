@@ -1,8 +1,8 @@
 <?php
 return [
     '@class' => 'Grav\\Common\\Config\\CompiledConfig',
-    'timestamp' => 1529314630,
-    'checksum' => '3f7af98e006031461c9809c66164193e',
+    'timestamp' => 1529882154,
+    'checksum' => '74e67700a6a6c5f38cbd409a68a83535',
     'files' => [
         'user/config' => [
             'media' => [
@@ -31,7 +31,7 @@ return [
             ],
             'site' => [
                 'file' => 'user/config/site.yaml',
-                'modified' => 1527059580
+                'modified' => 1529575936
             ],
             'streams' => [
                 'file' => 'user/config/streams.yaml',
@@ -39,25 +39,25 @@ return [
             ],
             'system' => [
                 'file' => 'user/config/system.yaml',
-                'modified' => 1529314454
+                'modified' => 1529882146
             ]
         ],
         'system/config' => [
             'media' => [
                 'file' => 'system/config/media.yaml',
-                'modified' => 1526399966
+                'modified' => 1529656344
             ],
             'site' => [
                 'file' => 'system/config/site.yaml',
-                'modified' => 1526399966
+                'modified' => 1529656344
             ],
             'streams' => [
                 'file' => 'system/config/streams.yaml',
-                'modified' => 1526399966
+                'modified' => 1529656344
             ],
             'system' => [
                 'file' => 'system/config/system.yaml',
-                'modified' => 1526399966
+                'modified' => 1529656344
             ]
         ],
         'user/plugins' => [
@@ -67,7 +67,7 @@ return [
             ],
             'plugins/form' => [
                 'file' => 'user/plugins/form/form.yaml',
-                'modified' => 1527054837
+                'modified' => 1529408318
             ],
             'plugins/highlight' => [
                 'file' => 'user/plugins/highlight/highlight.yaml',
@@ -79,11 +79,19 @@ return [
             ],
             'plugins/admin' => [
                 'file' => 'user/plugins/admin/admin.yaml',
-                'modified' => 1527294683
+                'modified' => 1529408316
             ],
             'plugins/problems' => [
                 'file' => 'user/plugins/problems/problems.yaml',
                 'modified' => 1526399970
+            ],
+            'plugins/shortcode-core' => [
+                'file' => 'user/plugins/shortcode-core/shortcode-core.yaml',
+                'modified' => 1529410521
+            ],
+            'plugins/seo' => [
+                'file' => 'user/plugins/seo/seo.yaml',
+                'modified' => 1529408320
             ],
             'plugins/error' => [
                 'file' => 'user/plugins/error/error.yaml',
@@ -95,11 +103,15 @@ return [
             ],
             'plugins/login' => [
                 'file' => 'user/plugins/login/login.yaml',
-                'modified' => 1527054839
+                'modified' => 1529408319
             ],
             'plugins/email' => [
                 'file' => 'user/plugins/email/email.yaml',
                 'modified' => 1527054841
+            ],
+            'plugins/featherlight' => [
+                'file' => 'user/plugins/featherlight/featherlight.yaml',
+                'modified' => 1529408354
             ]
         ]
     ],
@@ -240,7 +252,7 @@ return [
                 'enabled' => true,
                 'route' => '/admin',
                 'cache_enabled' => false,
-                'theme' => 'custom',
+                'theme' => 'grav',
                 'logo_text' => '',
                 'body_classes' => '',
                 'content_padding' => true,
@@ -251,7 +263,7 @@ return [
                     'size' => 'auto'
                 ],
                 'dashboard' => [
-                    'days_of_stats' => 14
+                    'days_of_stats' => 7
                 ],
                 'widgets' => [
                     'dashboard-maintenance' => true,
@@ -298,6 +310,26 @@ return [
             'problems' => [
                 'enabled' => true,
                 'built_in_css' => true
+            ],
+            'shortcode-core' => [
+                'enabled' => true,
+                'active' => true,
+                'active_admin' => true,
+                'parser' => 'regex',
+                'custom_shortcodes' => NULL,
+                'fontawesome' => [
+                    'load' => true,
+                    'url' => '//maxcdn.bootstrapcdn.com/font-awesome/4.6.1/css/font-awesome.min.css'
+                ]
+            ],
+            'seo' => [
+                'enabled' => true,
+                'article' => true,
+                'restaurant' => true,
+                'event' => true,
+                'organization' => true,
+                'musicevent' => true,
+                'person' => true
             ],
             'error' => [
                 'enabled' => true,
@@ -390,6 +422,18 @@ return [
                 ],
                 'content_type' => 'text/html',
                 'debug' => false
+            ],
+            'featherlight' => [
+                'enabled' => true,
+                'active' => true,
+                'gallery' => false,
+                'requirejs' => false,
+                'openSpeed' => 250,
+                'closeSpeed' => 250,
+                'closeOnClick' => 'background',
+                'closeOnEsc' => true,
+                'root' => 'body',
+                'initTemplate' => 'plugin://featherlight/js/featherlight.init.js'
             ],
             'anchors' => [
                 'selectors' => '#body h2, #body h3, #body h4, #body h5'
@@ -686,6 +730,18 @@ return [
             'routes' => NULL,
             'blog' => [
                 'route' => '/blog'
+            ],
+            'navigation' => [
+                'interface' => [
+                    0 => 'Atoms',
+                    1 => 'Molecules',
+                    2 => 'Organisms',
+                    3 => 'Templates',
+                    4 => 'Pages'
+                ],
+                'secondary' => [
+                    0 => 'Patterns'
+                ]
             ]
         ],
         'streams' => [
@@ -736,7 +792,7 @@ return [
                 'override_locale' => false
             ],
             'home' => [
-                'alias' => '/atoms',
+                'alias' => '/home',
                 'hide_in_urls' => false
             ],
             'pages' => [

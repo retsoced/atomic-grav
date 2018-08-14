@@ -2,12 +2,12 @@
 return [
     '@class' => 'Grav\\Common\\File\\CompiledYamlFile',
     'filename' => '/Users/deltaecho3/Development/grav-pattern-library-template/user/plugins/admin/admin.yaml',
-    'modified' => 1527294683,
+    'modified' => 1529408316,
     'data' => [
         'enabled' => true,
         'route' => '/admin',
         'cache_enabled' => false,
-        'theme' => 'custom',
+        'theme' => 'grav',
         'logo_text' => '',
         'body_classes' => '',
         'content_padding' => true,
@@ -18,7 +18,7 @@ return [
             'size' => 'auto'
         ],
         'dashboard' => [
-            'days_of_stats' => 14
+            'days_of_stats' => 7
         ],
         'widgets' => [
             'dashboard-maintenance' => true,

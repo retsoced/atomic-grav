@@ -1,0 +1,11 @@
+{% set baconText = ["Bacon ipsum dolor amet shank t-bone cillum corned beef kevin meatloaf aliqua cupidatat nisi pariatur ribeye porchetta filet mignon pork loin strip steak. Tongue swine bacon eiusmod nulla, venison flank id shankle. Porchetta prosciutto cow boudin. T-bone frankfurter deserunt enim dolor ground round dolore consequat nisi ball tip. Occaecat velit nulla porchetta ham hock flank prosciutto anim, est deserunt.","Ipsum est rump pork chop. Beef ribs mollit esse spare ribs. Andouille beef ribs voluptate tri-tip flank non. Tongue t-bone bacon ut. Short ribs do aute cillum rump. Commodo flank eiusmod bresaola cupim picanha.","Brisket dolor pork belly adipisicing, bacon doner meatball salami porchetta cupidatat short ribs turkey enim nisi. Sed do ham duis labore. Beef ribs tongue ut nisi corned beef pork chop meatball cupim biltong doner brisket shank. Nostrud pig dolore irure ut hamburger ipsum short loin ad lorem.","Flank brisket eiusmod, turkey adipisicing fatback doner velit. Est sirloin aliqua ham hock flank, ad sint sed pancetta. Non sunt quis filet mignon sed venison qui. Tempor proident sint, leberkas swine beef ribs voluptate. Aliqua pancetta chuck, laborum salami voluptate beef laboris fatback excepteur alcatra do officia.","Rump reprehenderit cupidatat commodo, adipisicing elit shankle voluptate tri-tip occaecat dolor fugiat. Fugiat beef ribs ad swine turkey bresaola dolore elit quis cupim adipisicing flank spare ribs frankfurter mollit. Pastrami hamburger sint rump mollit. Tail lorem leberkas adipisicing brisket meatloaf."] %}
+
+
+{% macro baconIpsum(count,length) %}
+
+    {% if (count > 0) %}
+      {% for text in baconText %}
+        <p>{{ text }}</p>
+      {% endfor %}
+    {% endif %}
+{% endmacro %}
